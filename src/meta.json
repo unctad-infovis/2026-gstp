@@ -1,0 +1,35 @@
+{
+  "show_site_header": false,
+
+  "hero_image": "assets/img/2026-gstp_hero_tmp.jpg",
+  "title": "Welcome to the Global System of Trade Preferences",
+  "title_highlight": "Global System of Trade Preferences",
+  "subtitle": "A trade agreement designed by and for developing countries.",
+  "description": "The GSTP is the largest preferential trade agreement among developing countries. Established in 1988, it expands South–South trade through preferential market access.",
+
+  "stats": [
+    { "prefix": "US$", "value": 18, "decimals": 0, "suffix": "T", "label": "Combined market" },
+    { "prefix": "", "value": 18, "decimals": 0, "suffix": "%", "label": "Of global merchandise imports" },
+    { "prefix": "US$", "value": 27, "decimals": 0, "suffix": "B", "label": "In welfare gains" },
+    { "text_lines": ["Expanding market access,", "diversifying trade, strengthening"], "highlight": "resilience" }
+  ],
+
+  "nav": [],
+
+  "ni_title": "Why the GSTP matters",
+  "ni_description": "Placeholder framing paragraph for the GSTP big picture — replace with the real narrative once content is finalized.",
+  "ni_description2": "",
+
+  "ni_def_title": "What is the GSTP?",
+  "ni_def_statement_prefix": "The Global System of Trade Preferences grants preferential tariff treatment among",
+  "ni_def_badge": "43",
+  "ni_def_statement_suffix": "participating developing countries, reducing tariffs on thousands of traded products.",
+  "ni_def_attribution": "UNCTAD, Global System of Trade Preferences among Developing Countries.",
+
+  "ni_cards": [
+    { "label": "Participating countries", "prefix": "", "value": 43, "decimals": 0, "suffix": "", "description": "developing countries are parties to the GSTP" },
+    { "label": "Participating countries", "prefix": "", "value": 43, "decimals": 0, "suffix": "", "description": "developing countries are parties to the GSTP" },
+    { "label": "Participating countries", "prefix": "", "value": 43, "decimals": 0, "suffix": "", "description": "developing countries are parties to the GSTP" },
+    { "label": "Participating countries", "prefix": "", "value": 43, "decimals": 0, "suffix": "", "description": "developing countries are parties to the GSTP" }
+  ]
+}
