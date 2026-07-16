@@ -2,6 +2,18 @@
 
 **Live demo** https://unctad-infovis.github.io/2026-gstp/
 
+## Embedding
+
+```html
+<script type="module" crossorigin="" src="https://storage.unctad.org/2026-gstp/js/2026-gstp.min.js?v=1"></script>
+<link rel="stylesheet" crossorigin="" href="https://storage.unctad.org/2026-gstp/css/2026-gstp.min.css?v=1">
+<div class="app-root-2026-gstp" id="app-root-2026-gstp">
+  Loading...
+</div>
+```
+
+Update the `?v=` query parameter to match the current build version to bust the cache.
+
 ## Rights of usage
 
 Contact Teemo Tebest.

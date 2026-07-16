@@ -113,6 +113,11 @@
       margin: 0 auto;
     }
   }
+  @media (max-width: 700px) {
+    .tr_grid {
+      grid-template-columns: 1fr;
+    }
+  }
   @media (prefers-reduced-motion: reduce) {
     .tr_tile {
       transition: none;
