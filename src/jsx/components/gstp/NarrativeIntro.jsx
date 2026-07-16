@@ -1,10 +1,7 @@
-import useIsVisible from './../../helpers/UseIsVisible';
-import RollingNumber from './../general/RollingNumber.jsx';
 import './NarrativeIntro.css';
 
-export default function NarrativeIntro({ cards = [], def_attribution, def_badge, def_statement_prefix, def_statement_suffix, def_title, description, description2, title }) {
+export default function NarrativeIntro({ def_attribution, def_badge, def_description, def_statement_prefix, def_statement_suffix, def_title, description, description2, title }) {
   const hasDefinition = !!(def_title && def_badge);
-  const [cardsRef, cardsInView] = useIsVisible(0.3);
 
   return (
     <div className="ni_container">
@@ -32,27 +29,12 @@ export default function NarrativeIntro({ cards = [], def_attribution, def_badge,
               <p className="ni_def_statement">
                 {def_statement_prefix} <span className="ni_def_badge">{def_badge}</span> {def_statement_suffix}
               </p>
+              {def_description && <p className="ni_def_description">{def_description}</p>}
               {def_attribution && <p className="ni_def_attribution">{def_attribution}</p>}
             </div>
           )}
         </div>
       </div>
-
-      {cards.length > 0 && (
-        <div className="ni_cards" ref={cardsRef}>
-          {cards.map((card, idx) => (
-            <div className="ni_card" key={card.label ?? `card-${idx}`} style={{ transitionDelay: `${idx * 150}ms` }}>
-              <p className="ni_card_label">{card.label}</p>
-              <p className="ni_card_value">
-                {card.prefix}
-                <RollingNumber target={card.value} decimals={card.decimals ?? 0} inView={cardsInView} />
-                {card.suffix}
-              </p>
-              <p className="ni_card_desc">{card.description}</p>
-            </div>
-          ))}
-        </div>
-      )}
     </div>
   );
 }

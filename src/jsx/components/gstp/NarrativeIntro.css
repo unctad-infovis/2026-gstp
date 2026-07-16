@@ -81,6 +81,14 @@
       font-weight: var(--un-font-weight-boldest);
       padding: 0 6px;
     }
+    .ni_def_description {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: var(--un-font-size-normal);
+      font-weight: var(--un-font-weight-normal);
+      line-height: var(--un-line-height-normal);
+      margin: 0 0 16px;
+      padding: 0;
+    }
     .ni_def_attribution {
       color: rgba(255, 255, 255, 0.45);
       font-size: var(--un-font-size-xs);
@@ -122,52 +130,6 @@
       margin: 0 0 28px 0;
       padding: 0;
     }
-    /* Indicator cards */
-    .ni_cards {
-      display: grid;
-      gap: 16px;
-      grid-template-columns: repeat(4, 1fr);
-      margin: auto auto;
-      max-width: 1350px;
-      padding: 40px 16px 20px 16px;
-    }
-    .ni_card {
-      background: #fff;
-      border-radius: 20px;
-      border: 1px solid var(--un-color-grey-lightest);
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      padding: 20px 24px;
-    }
-    .ni_card_label {
-      color: var(--un-color-grey-text);
-      font-size: var(--un-font-size-xxxs);
-      font-weight: var(--un-font-weight-bold);
-      letter-spacing: 0.08em;
-      margin: 0 0 10px 0;
-      padding: 0;
-      text-transform: uppercase;
-    }
-    .ni_card_value {
-      color: var(--un-color-yellow);
-      display: block;
-      font-size: var(--un-font-size-xxxxl);
-      font-weight: var(--un-font-weight-boldest);
-      line-height: 1;
-      margin: 0 0 8px 0;
-      padding: 0;
-    }
-    .ni_card_desc {
-      color: var(--un-color-grey-dark);
-      flex: 1;
-      font-size: var(--un-font-size-xs);
-      font-weight: var(--un-font-weight-normal);
-      line-height: var(--un-line-height-normal);
-      margin: 0 0 16px 0;
-      padding: 0;
-    }
     @media (max-width: 860px) {
       .ni_hero--split {
         grid-template-columns: 1fr;
@@ -178,17 +140,6 @@
         margin-top: clamp(24px, 4vw, 40px);
         padding-left: 0;
         padding-top: clamp(24px, 4vw, 40px);
-      }
-    }
-    @media (max-width: 1000px) {
-      .ni_cards {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (max-width: 600px) {
-      .ni_cards {
-        grid-template-columns: 1fr;
-        padding: 16px 8px;
       }
     }
   }

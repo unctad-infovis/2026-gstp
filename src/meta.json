@@ -1,11 +1,10 @@
 {
   "show_site_header": false,
 
-  "hero_image": "assets/img/2026-gstp_hero_tmp.jpg",
+  "hero_image": "assets/img/2026-gstp_hero.webp",
   "title": "Welcome to the Global System of Trade Preferences",
   "title_highlight": "Global System of Trade Preferences",
   "subtitle": "A trade agreement designed by and for developing countries.",
-  "description": "The GSTP is the largest preferential trade agreement among developing countries. Established in 1988, it expands South–South trade through preferential market access.",
 
   "stats": [
     { "prefix": "US$", "value": 18, "decimals": 0, "suffix": "T", "label": "Combined market" },
@@ -14,7 +13,11 @@
     { "text_lines": ["Expanding market access,", "diversifying trade, strengthening"], "highlight": "resilience" }
   ],
 
-  "nav": [],
+  "nav": [
+    { "label": "News", "href": "#news" },
+    { "label": "Publications", "href": "#publications" },
+    { "label": "Resources", "href": "#resources" }
+  ],
 
   "ni_title": "Why the GSTP matters",
   "ni_description": "Placeholder framing paragraph for the GSTP big picture — replace with the real narrative once content is finalized.",
@@ -24,12 +27,29 @@
   "ni_def_statement_prefix": "The Global System of Trade Preferences grants preferential tariff treatment among",
   "ni_def_badge": "43",
   "ni_def_statement_suffix": "participating developing countries, reducing tariffs on thousands of traded products.",
+  "ni_def_description": "The GSTP is the largest preferential trade agreement among developing countries. Established in 1988, it expands South–South trade through preferential market access.",
   "ni_def_attribution": "UNCTAD, Global System of Trade Preferences among Developing Countries.",
 
-  "ni_cards": [
-    { "label": "Participating countries", "prefix": "", "value": 43, "decimals": 0, "suffix": "", "description": "developing countries are parties to the GSTP" },
-    { "label": "Participating countries", "prefix": "", "value": 43, "decimals": 0, "suffix": "", "description": "developing countries are parties to the GSTP" },
-    { "label": "Participating countries", "prefix": "", "value": 43, "decimals": 0, "suffix": "", "description": "developing countries are parties to the GSTP" },
-    { "label": "Participating countries", "prefix": "", "value": 43, "decimals": 0, "suffix": "", "description": "developing countries are parties to the GSTP" }
+  "tl_title": "Historic Milestone",
+  "tl_description": "For more than three decades, the GSTP has provided a framework for expanding trade among developing countries. Today, the Agreement is approaching an important milestone with the entry into force of the São Paulo Round — one additional ratification is required.",
+  "tl_milestones": [{ "year": "1988", "label": "GSTP Agreement adopted" }, { "year": "1989", "label": "Agreement enters into force" }, { "year": "2010", "label": "São Paulo Round concluded" }, { "year": "Today", "label": "One ratification away from entry into force", "current": true }],
+
+  "tr_groups": [
+    {
+      "title": "Economic Welfare",
+      "description": "The São Paulo Round could unlock substantial economic gains for developing countries — cutting tariffs across thousands of traded products and expanding preferential market access.",
+      "tiles": [
+        { "prefix": "US$", "value": 27, "decimals": 0, "suffix": "B", "label": "Potential welfare gains", "description": "Could generate up to US$27 billion in welfare gains for participating economies." },
+        { "prefix": "", "value": 20, "decimals": 0, "suffix": "%", "label": "Tariff reduction", "description": "São Paulo Round Protocol" },
+        { "prefix": "~", "value": 6000, "decimals": 0, "suffix": "", "label": "Products covered", "description": "Traded products subject to preferential tariff cuts under the São Paulo Round." }
+      ]
+    },
+    {
+      "title": "Global Resilience",
+      "description": "As the global economy becomes more uncertain, expanding South–South trade offers new opportunities to diversify export markets, strengthen resilience and foster sustainable economic growth.",
+      "tiles": [
+        { "prefix": "US$", "value": 18, "decimals": 0, "suffix": "T", "label": "Combined market size", "description": "Expands market access, diversifies trade and strengthens economic resilience across the Global South." }
+      ]
+    }
   ]
 }

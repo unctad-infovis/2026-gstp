@@ -16,6 +16,14 @@ function scrollToY() {
   requestAnimationFrame(step);
 }
 
+function scrollToHash(event, href) {
+  const target = document.getElementById(href.slice(1));
+  if (!target) return;
+  event.preventDefault();
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+}
+
 function isCurrentPage(href) {
   if (!href || href.startsWith('#')) return false;
   if (typeof window === 'undefined') return false;
@@ -37,6 +45,13 @@ export default function Nav({ items = [] }) {
       {items.map(item => {
         const active = isCurrentPage(item.href);
         const cls = `nav_btn${item.primary ? ' nav_btn--primary' : ''}${active ? ' nav_btn--active' : ''}`;
+        if (item.href?.startsWith('#')) {
+          return (
+            <a className={cls} href={item.href} key={item.label} onClick={event => scrollToHash(event, item.href)}>
+              {item.label}
+            </a>
+          );
+        }
         if (item.href) {
           return (
             <a className={cls} href={item.href} key={item.label}>

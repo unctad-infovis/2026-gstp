@@ -1,5 +1,4 @@
 <Header
-  description={props.meta.description}
   hero_image={props.meta.hero_image}
   nav={props.meta.nav}
   stats={props.meta.stats}
@@ -8,13 +7,21 @@
   title_highlight={props.meta.title_highlight}
 />
 <NarrativeIntro
-  cards={props.meta.ni_cards}
   def_attribution={props.meta.ni_def_attribution}
   def_badge={props.meta.ni_def_badge}
+  def_description={props.meta.ni_def_description}
   def_statement_prefix={props.meta.ni_def_statement_prefix}
   def_statement_suffix={props.meta.ni_def_statement_suffix}
   def_title={props.meta.ni_def_title}
   description={props.meta.ni_description}
   description2={props.meta.ni_description2}
   title={props.meta.ni_title}
+/>
+<Timeline
+  title={props.meta.tl_title}
+  description={props.meta.tl_description}
+  milestones={props.meta.tl_milestones}
+/>
+<TileRow
+  groups={props.meta.tr_groups}
 />

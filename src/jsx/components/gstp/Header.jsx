@@ -5,7 +5,7 @@ import RollingNumber from './../general/RollingNumber.jsx';
 import Nav from './Nav.jsx';
 import './Header.css';
 
-export default function Header({ description, hero_image, nav, stats, subtitle, title, title_highlight }) {
+export default function Header({ hero_image, nav, stats, subtitle, title, title_highlight }) {
   const [statsRef, statsInView] = useIsVisible(0.3);
 
   function renderTitle() {
@@ -30,12 +30,10 @@ export default function Header({ description, hero_image, nav, stats, subtitle, 
         </defs>
       </svg>
 
-      <div className="header_grain" aria-hidden="true" />
       <div className="header_content">
         <h1 className="header_title">{renderTitle()}</h1>
         <ButtonShare url={typeof window !== 'undefined' ? window.location.href : ''} defaultOpen position="static" iconBg="rgba(0,0,0,0.45)" iconHoverBg="rgba(251, 175, 23, 0.75)" iconColor="#fff" iconHoverColor="#000" size={36} />
         <p className="header_subtitle">{subtitle}</p>
-        {description && <p className="header_description">{description}</p>}
 
         {stats?.length > 0 && (
           <div className="header_stats" ref={statsRef}>

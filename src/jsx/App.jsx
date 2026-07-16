@@ -8,15 +8,12 @@ import Article from '../Article.mdx';
 // import Image from './components/general/Image.jsx';
 // import ProgressBar from './components/general/ProgressBar.jsx';
 // import Quote from './components/general/Quote.jsx';
+import TileRow from './components/general/TileRow.jsx';
 
 // GSTP
 import Header from './components/gstp/Header.jsx';
 import NarrativeIntro from './components/gstp/NarrativeIntro.jsx';
-
-// Minisite
-// import Header from './components/minisite/Header.jsx';
-// import HeaderChapter from './components/minisite/HeaderChapter.jsx';
-// import SideScrollingText from './components/minisite/SideScrollingText.jsx';
+import Timeline from './components/gstp/Timeline.jsx';
 
 import './../styles/styles.css';
 
@@ -27,10 +24,12 @@ const components = {
   Header,
   // HeaderChapter,
   // Image,
-  NarrativeIntro
+  NarrativeIntro,
   // ProgressBar,
   // Quote,
   // SideScrollingText
+  TileRow,
+  Timeline
 };
 
 const App = ({ meta }) => {
