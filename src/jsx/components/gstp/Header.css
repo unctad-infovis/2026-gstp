@@ -58,7 +58,7 @@
         }
       }
       .header_title_highlight {
-        color: var(--un-color-blue-text);
+        color: var(--un-color-orange-brand);
       }
       .header_subtitle {
         color: rgba(255, 255, 255, 0.92);
@@ -81,7 +81,7 @@
         flex-direction: column;
         gap: 4px;
         .header_stat_value {
-          color: var(--un-color-blue-text);
+          color: var(--un-color-orange-brand);
           font-size: clamp(30px, 3.5vw, var(--un-font-size-xxxxl));
           font-weight: var(--un-font-weight-boldest);
           line-height: 1;
@@ -113,7 +113,7 @@
           text-transform: uppercase;
         }
         .header_stat_highlight {
-          color: var(--un-color-blue-text);
+          color: var(--un-color-orange-brand);
           display: inline-block;
           font-size: clamp(24px, 2.4vw, var(--un-font-size-xxxl));
           font-weight: var(--un-font-weight-boldest);

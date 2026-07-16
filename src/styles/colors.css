@@ -45,6 +45,15 @@
   --un-color-yellow-brand-shade: #b16d03;
 
   /*
+  * ORANGE
+  */
+  --un-color-orange: #f58220;
+  --un-color-orange-brand: #f58220;
+  --un-color-orange-brand-light: #fedcbd;
+  --un-color-orange-brand-lighter: #ffead5;
+  --un-color-orange-brand-shade: #d4582a;
+
+  /*
   * GREY
   */
   --un-color-grey-dark: #6e6259;

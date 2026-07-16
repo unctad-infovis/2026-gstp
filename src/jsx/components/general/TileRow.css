@@ -7,7 +7,7 @@
   }
   .tr_eyebrow {
     align-items: center;
-    color: var(--un-color-blue-text);
+    color: var(--un-color-orange-brand);
     display: flex;
     font-size: var(--un-font-size-xxs);
     font-weight: var(--un-font-weight-bold);
@@ -19,7 +19,7 @@
     text-transform: uppercase;
   }
   .tr_eyebrow_line {
-    background: var(--un-color-blue-text);
+    background: var(--un-color-orange-brand);
     display: block;
     flex: 0 0 auto;
     height: 2px;
@@ -37,7 +37,7 @@
     text-align: center;
   }
   .tr_title {
-    color: var(--un-color-blue-text-dark);
+    color: var(--un-color-orange-brand-shade);
     font-size: var(--un-font-size-xxxl);
     font-weight: var(--un-font-weight-boldest);
     line-height: var(--un-line-height-small);
@@ -87,7 +87,7 @@
     text-transform: uppercase;
   }
   .tr_tile_value {
-    color: var(--un-color-blue-text);
+    color: var(--un-color-orange-brand);
     display: block;
     font-size: var(--un-font-size-xxxl);
     font-weight: var(--un-font-weight-bolder);
