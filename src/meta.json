@@ -9,7 +9,7 @@
   "stats": [
     { "prefix": "US$", "value": 18, "decimals": 0, "suffix": "T", "label": "Combined market" },
     { "prefix": "", "value": 18, "decimals": 0, "suffix": "%", "label": "Of global merchandise imports" },
-    { "prefix": "US$", "value": 27, "decimals": 0, "suffix": "B", "label": "In welfare gains" },
+    { "prefix": "US$", "value": 14, "decimals": 0, "suffix": "B", "label": "In welfare gains" },
     { "text_lines": ["Expanding market access,", "diversifying trade, strengthening"], "highlight": "resilience" }
   ],
 
@@ -19,15 +19,15 @@
     { "label": "Resources", "href": "#resources" }
   ],
 
-  "ni_title": "Why the GSTP matters",
-  "ni_description": "Placeholder framing paragraph for the GSTP big picture — replace with the real narrative once content is finalized.",
-  "ni_description2": "",
+  "ni_title": "Why it matters?",
+  "ni_description": "As global trade grows more fragmented and protectionist, the GSTP gives developing countries a preferential channel to diversify export markets and build economic resilience. GSTP economies represent a combined $18 trillion market, accounting for 18% of global merchandise imports.",
+  "ni_description2": "The agreement is also nearing a major milestone: the São Paulo Round, offering deeper tariff cuts across thousands of products, is just one ratification away from entering into force — a step that could unlock up to $14 billion in welfare gains for participating economies.",
 
   "ni_def_title": "What is the GSTP?",
-  "ni_def_statement_prefix": "The Global System of Trade Preferences grants preferential tariff treatment among",
-  "ni_def_badge": "43",
+  "ni_def_statement_prefix": "The Global System of Trade Preferences (GSTP) grants preferential tariff treatment among",
+  "ni_def_badge": "42",
   "ni_def_statement_suffix": "participating developing countries, reducing tariffs on thousands of traded products.",
-  "ni_def_description": "The GSTP is the largest preferential trade agreement among developing countries. Established in 1988, it expands South–South trade through preferential market access.",
+  "ni_def_description": "The GSTP is the only inter-regional trade agreement created exclusively by and for developing countries. Established in 1988, it expands South–South trade through preferential market access. The Committee of Participants is the GSTP's governing body, with UNCTAD serving as its Secretariat.",
   "ni_def_attribution": "UNCTAD, Global System of Trade Preferences among Developing Countries.",
 
   "tl_title": "Historic Milestone",
@@ -39,9 +39,8 @@
       "title": "Economic Welfare",
       "description": "The São Paulo Round could unlock substantial economic gains for developing countries — cutting tariffs across thousands of traded products and expanding preferential market access.",
       "tiles": [
-        { "prefix": "US$", "value": 27, "decimals": 0, "suffix": "B", "label": "Potential welfare gains", "description": "Could generate up to US$27 billion in welfare gains for participating economies." },
-        { "prefix": "", "value": 20, "decimals": 0, "suffix": "%", "label": "Tariff reduction", "description": "São Paulo Round Protocol" },
-        { "prefix": "~", "value": 6000, "decimals": 0, "suffix": "", "label": "Products covered", "description": "Traded products subject to preferential tariff cuts under the São Paulo Round." }
+        { "prefix": "US$", "value": 14, "decimals": 0, "suffix": "B", "label": "Potential welfare gains", "description": "Under the São Paulo Round." },
+        { "prefix": "", "value": 47000, "decimals": 0, "suffix": "", "label": "Products covered", "description": "Traded products subject to preferential tariff cuts under the São Paulo Round." }
       ]
     },
     {
