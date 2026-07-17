@@ -14,6 +14,7 @@ import TileRow from './components/general/TileRow.jsx';
 import Header from './components/gstp/Header.jsx';
 import NarrativeIntro from './components/gstp/NarrativeIntro.jsx';
 import Timeline from './components/gstp/Timeline.jsx';
+import TradeShareChart from './components/gstp/TradeShareChart.jsx';
 
 import './../styles/styles.css';
 
@@ -29,7 +30,8 @@ const components = {
   // Quote,
   // SideScrollingText
   TileRow,
-  Timeline
+  Timeline,
+  TradeShareChart
 };
 
 const App = ({ meta }) => {

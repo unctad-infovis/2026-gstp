@@ -47,7 +47,8 @@ The following packages are used in this project by default.
 
 ### Project specific
 
-* none
+* **d3-scale** — used to compute the bar/axis geometry for the Intra-GSTP trade chart
+* **d3-array** — used to compute the max value for the Intra-GSTP trade chart's scale
 
 ### Build & Dev Server
 

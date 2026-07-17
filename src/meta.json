@@ -13,11 +13,7 @@
     { "text_lines": ["Expanding market access,", "diversifying trade, strengthening"], "highlight": "resilience" }
   ],
 
-  "nav": [
-    { "label": "News", "href": "#news" },
-    { "label": "Publications", "href": "#publications" },
-    { "label": "Resources", "href": "#resources" }
-  ],
+  "nav": [{ "label": "News", "href": "#news" }, { "label": "Publications", "href": "#publications" }, { "label": "Resources", "href": "#resources" }],
 
   "ni_title": "Why it matters?",
   "ni_description": "As global trade grows more fragmented and protectionist, the GSTP gives developing countries a preferential channel to diversify export markets and build economic resilience. GSTP economies represent a combined $18 trillion market, accounting for 18% of global merchandise imports.",
@@ -49,5 +45,57 @@
       "description": "As the global economy becomes more uncertain, expanding South–South trade offers new opportunities to diversify export markets, strengthen resilience and foster sustainable economic growth.",
       "tiles": []
     }
-  ]
+  ],
+
+  "tc_title": "Intra-GSTP trade accounts for almost one quarter of the participating countries' exports",
+  "tc_subtitle": "Share of exports to countries participating in the Global System of Trade Preferences, percentage, 2025",
+  "tc_legend": [{ "category": "ratifying", "label": "GSTP São Paulo Round Protocol ratifying party" }, { "category": "signatory", "label": "Other GSTP São Paulo Round Protocol signatory" }, { "category": "participant", "label": "Other GSTP participant" }],
+  "tc_data": [
+    { "name": "Benin", "value": 52.95, "category": "participant" },
+    { "name": "Iran (Islamic Republic of)", "value": 46.0, "category": "participant" },
+    { "name": "Bolivia (Plurinational State of)", "value": 40.2, "category": "participant" },
+    { "name": "Malaysia", "value": 39.01, "category": "ratifying" },
+    { "name": "Indonesia", "value": 37.18, "category": "signatory" },
+    { "name": "Iraq", "value": 36.99, "category": "participant" },
+    { "name": "Venezuela (Bolivarian Rep. of)", "value": 35.2, "category": "participant" },
+    { "name": "Mozambique", "value": 34.51, "category": "participant" },
+    { "name": "Singapore", "value": 34.36, "category": "participant" },
+    { "name": "Argentina", "value": 32.75, "category": "signatory" },
+    { "name": "Myanmar", "value": 32.13, "category": "participant" },
+    { "name": "United Republic of Tanzania", "value": 28.97, "category": "participant" },
+    { "name": "Nigeria", "value": 26.99, "category": "participant" },
+    { "name": "Republic of Korea", "value": 24.52, "category": "signatory" },
+    { "name": "MERCOSUR", "value": 24.13, "category": "signatory" },
+    { "name": "Thailand", "value": 23.6, "category": "participant" },
+    { "name": "Brazil", "value": 22.5, "category": "signatory" },
+    { "name": "Guinea", "value": 22.32, "category": "participant" },
+    { "name": "Trinidad and Tobago", "value": 22.32, "category": "participant" },
+    { "name": "Chile", "value": 21.17, "category": "participant" },
+    { "name": "Paraguay", "value": 19.58, "category": "signatory" },
+    { "name": "Peru", "value": 19.51, "category": "participant" },
+    { "name": "Egypt", "value": 19.36, "category": "signatory" },
+    { "name": "Sri Lanka", "value": 18.91, "category": "participant" },
+    { "name": "Philippines", "value": 18.59, "category": "participant" },
+    { "name": "India", "value": 18.48, "category": "ratifying" },
+    { "name": "Cameroon", "value": 17.31, "category": "participant" },
+    { "name": "Morocco", "value": 15.32, "category": "signatory" },
+    { "name": "Dem. People's Rep. of Korea", "value": 14.66, "category": "participant" },
+    { "name": "Nicaragua", "value": 14.34, "category": "participant" },
+    { "name": "Sudan", "value": 13.47, "category": "participant" },
+    { "name": "Pakistan", "value": 12.62, "category": "participant" },
+    { "name": "Ghana", "value": 12.4, "category": "participant" },
+    { "name": "Uruguay", "value": 12.38, "category": "signatory" },
+    { "name": "Cuba", "value": 12.17, "category": "ratifying" },
+    { "name": "Viet Nam", "value": 12.0, "category": "participant" },
+    { "name": "Ecuador", "value": 11.91, "category": "participant" },
+    { "name": "Algeria", "value": 11.76, "category": "participant" },
+    { "name": "Guyana", "value": 11.25, "category": "participant" },
+    { "name": "Tunisia", "value": 11.15, "category": "participant" },
+    { "name": "Bangladesh", "value": 7.69, "category": "participant" },
+    { "name": "Zimbabwe", "value": 5.53, "category": "participant" },
+    { "name": "Libya", "value": 5.33, "category": "participant" },
+    { "name": "Mexico", "value": 3.24, "category": "participant" }
+  ],
+  "tc_source": "UN Trade and Development (UNCTAD) based on UNCTADstat.",
+  "tc_note": "Intra-MERCOSUR trade is not counted in intra-GSTP trade. The value for MERCOSUR reflects the extra-MERCOSUR exports of its members (Argentina, Brazil, Paraguay, and Uruguay)."
 }
