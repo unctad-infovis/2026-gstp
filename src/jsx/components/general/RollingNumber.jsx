@@ -24,5 +24,5 @@ export default function RollingNumber({ target, duration = 1200, decimals = 0, i
     };
   }, [inView, target, duration, decimals]);
 
-  return <>{decimals === 0 ? value : value.toFixed(decimals)}</>;
+  return <>{value.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals })}</>;
 }

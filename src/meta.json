@@ -31,7 +31,7 @@
   "ni_def_attribution": "UNCTAD, Global System of Trade Preferences among Developing Countries.",
 
   "tl_title": "Historic Milestone",
-  "tl_description": "For more than three decades, the GSTP has provided a framework for expanding trade among developing countries. Today, the Agreement is approaching an important milestone with the entry into force of the São Paulo Round — one additional ratification is required.",
+  "tl_description": "For more than three decades, the GSTP has provided a framework for expanding trade among developing countries. Today, the Agreement is approaching an important milestone with the entry into force of the São Paulo Round – one additional ratification is required.",
   "tl_milestones": [{ "year": "1988", "label": "GSTP Agreement adopted" }, { "year": "1989", "label": "Agreement enters into force" }, { "year": "2010", "label": "São Paulo Round concluded" }, { "year": "Today", "label": "One ratification away from entry into force", "current": true }],
 
   "tr_groups": [
@@ -39,7 +39,8 @@
       "title": "Economic Welfare",
       "description": "The São Paulo Round could unlock substantial economic gains for developing countries — cutting tariffs across thousands of traded products and expanding preferential market access.",
       "tiles": [
-        { "prefix": "US$", "value": 14, "decimals": 0, "suffix": "B", "label": "Potential welfare gains", "description": "Under the São Paulo Round." },
+        { "prefix": "", "value": 14, "decimals": 0, "suffix": " billions", "unit": "of dollars", "label": "Potential welfare gains", "description": "Under the São Paulo Round." },
+        { "prefix": "", "value": 20, "decimals": 0, "suffix": "%", "label": "Tariff reduction", "description": "São Paulo Round Protocol" },
         { "prefix": "", "value": 47000, "decimals": 0, "suffix": "", "label": "Products covered", "description": "Traded products subject to preferential tariff cuts under the São Paulo Round." }
       ]
     },
@@ -47,7 +48,7 @@
       "title": "Global Resilience",
       "description": "As the global economy becomes more uncertain, expanding South–South trade offers new opportunities to diversify export markets, strengthen resilience and foster sustainable economic growth.",
       "tiles": [
-        { "prefix": "US$", "value": 18, "decimals": 0, "suffix": "T", "label": "Combined market size", "description": "Expands market access, diversifies trade and strengthens economic resilience across the Global South." }
+        { "prefix": "", "value": 18, "decimals": 0, "suffix": " trillions", "unit": "of dollars", "label": "Combined market size", "description": "Expands market access, diversifies trade and strengthens economic resilience across the Global South." }
       ]
     }
   ]

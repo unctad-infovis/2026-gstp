@@ -94,6 +94,12 @@
     line-height: 1;
     margin: 0 0 8px;
   }
+  .tr_tile_unit {
+    color: var(--un-color-grey-dark);
+    font-size: var(--un-font-size-normal);
+    font-weight: var(--un-font-weight-bold);
+    margin: 0 0 8px;
+  }
   .tr_tile_desc {
     color: var(--un-color-grey-dark);
     flex: 1;

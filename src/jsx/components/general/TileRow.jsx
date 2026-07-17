@@ -27,6 +27,7 @@ export default function TileRow({ groups = [] }) {
                       <RollingNumber target={tile.value} decimals={tile.decimals ?? 0} inView={groupsInView} />
                       {tile.suffix}
                     </p>
+                    {tile.unit && <p className="tr_tile_unit">{tile.unit}</p>}
                     {tile.description && <p className="tr_tile_desc">{tile.description}</p>}
                   </div>
                 ))}

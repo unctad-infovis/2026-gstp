@@ -2,6 +2,12 @@
 
 **Live demo** https://unctad-infovis.github.io/2026-gstp/
 
+## About
+
+The Global System of Trade Preferences (GSTP) is a preferential trade agreement among 42 developing countries, administered by UNCTAD as its Secretariat. This project is a minisite introducing the GSTP: what it is, why it matters, its historic milestones, and the key figures behind its economic impact — including the potential welfare gains from the São Paulo Round, one ratification away from entering into force.
+
+Content is authored in MDX and rendered as a standalone React application embeddable within UNCTAD's Drupal platform. The page combines a photo header with key statistics, a two-column narrative section, an animated historic timeline, and tiled key-figure rows.
+
 ## Embedding
 
 ```html
