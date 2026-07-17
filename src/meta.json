@@ -7,9 +7,9 @@
   "subtitle": "A trade agreement designed by and for developing countries.",
 
   "stats": [
-    { "prefix": "US$", "value": 18, "decimals": 0, "suffix": "T", "label": "Combined market" },
+    { "prefix": "", "value": 4, "decimals": 0, "suffix": " billion+", "label": "People" },
+    { "prefix": "$", "value": 18, "decimals": 0, "suffix": " trillion", "label": "Market size" },
     { "prefix": "", "value": 18, "decimals": 0, "suffix": "%", "label": "Of global merchandise imports" },
-    { "prefix": "US$", "value": 14, "decimals": 0, "suffix": "B", "label": "In welfare gains" },
     { "text_lines": ["Expanding market access,", "diversifying trade, strengthening"], "highlight": "resilience" }
   ],
 
@@ -47,9 +47,7 @@
     {
       "title": "Global Resilience",
       "description": "As the global economy becomes more uncertain, expanding South–South trade offers new opportunities to diversify export markets, strengthen resilience and foster sustainable economic growth.",
-      "tiles": [
-        { "prefix": "", "value": 18, "decimals": 0, "suffix": " trillions", "unit": "of dollars", "label": "Combined market size", "description": "Expands market access, diversifies trade and strengthens economic resilience across the Global South." }
-      ]
+      "tiles": []
     }
   ]
 }
