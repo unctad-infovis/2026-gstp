@@ -96,18 +96,21 @@
       border: 0;
       cursor: default;
       font: inherit;
-      height: 100%;
       margin: 0;
       padding: 0;
       pointer-events: auto;
       position: absolute;
-      top: 0;
+      transition:
+        height 0.35s ease-out,
+        top 0.35s ease-out;
     }
     .tc_value {
+      bottom: 100%;
       color: var(--un-color-grey-darkest);
       font-size: var(--un-font-size-xxs);
       font-weight: var(--un-font-weight-boldest);
       left: 50%;
+      margin-bottom: 6px;
       position: absolute;
       transform: translateX(calc(-50% + 2px));
       white-space: nowrap;
@@ -184,6 +187,7 @@
     }
     @media (prefers-reduced-motion: reduce) {
       .tc_bar,
+      .tc_col,
       .tc_label,
       .tc_link {
         transition: none;

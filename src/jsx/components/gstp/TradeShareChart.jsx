@@ -18,6 +18,19 @@ export default function TradeShareChart({ data = [], legend = [], note, source, 
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [barsSettled, setBarsSettled] = useState(false);
   const [chartRef, chartInView] = useIsVisible(0.2);
+  const hideTimerRef = useRef(null);
+
+  function showTooltip(idx) {
+    if (hideTimerRef.current) {
+      clearTimeout(hideTimerRef.current);
+      hideTimerRef.current = null;
+    }
+    setHoveredIndex(idx);
+  }
+
+  function scheduleHideTooltip() {
+    hideTimerRef.current = setTimeout(() => setHoveredIndex(null), 250);
+  }
 
   useEffect(() => {
     const el = plotRef.current;
@@ -29,6 +42,8 @@ export default function TradeShareChart({ data = [], legend = [], note, source, 
     observer.observe(el);
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => () => hideTimerRef.current && clearTimeout(hideTimerRef.current), []);
 
   useEffect(() => {
     if (!chartInView) return;
@@ -102,23 +117,21 @@ export default function TradeShareChart({ data = [], legend = [], note, source, 
               {data.map((d, idx) => {
                 const isHovered = hoveredIndex === idx;
                 const visible = isHovered || (hoveredIndex === null && fitsLabel[idx]);
+                const targetY = yScale(d.value);
+                const targetHeight = plotSize.height - targetY;
                 return (
                   <button
                     aria-label={`${d.name}: ${Math.round(d.value)}%`}
                     className="tc_col"
                     key={d.name}
-                    onBlur={() => setHoveredIndex(null)}
-                    onFocus={() => setHoveredIndex(idx)}
-                    onMouseEnter={() => setHoveredIndex(idx)}
-                    onMouseLeave={() => setHoveredIndex(null)}
-                    style={{ left: xScale(d.name), width: xScale.bandwidth() }}
+                    onBlur={scheduleHideTooltip}
+                    onFocus={() => showTooltip(idx)}
+                    onMouseEnter={() => showTooltip(idx)}
+                    onMouseLeave={scheduleHideTooltip}
+                    style={{ height: chartInView ? targetHeight : 0, left: xScale(d.name), top: chartInView ? targetY : plotSize.height, transitionDelay: `${idx * 18}ms`, width: xScale.bandwidth() }}
                     type="button"
                   >
-                    {visible && (
-                      <span className="tc_value" style={{ bottom: plotSize.height - yScale(d.value) + 6 }}>
-                        {Math.round(d.value)}%
-                      </span>
-                    )}
+                    {visible && <span className="tc_value">{Math.round(d.value)}%</span>}
                     <span className={`tc_label${isHovered ? ' tc_label--hover' : ''}${visible ? '' : ' tc_label--hidden'}`} ref={el => (labelRefs.current[idx] = el)}>
                       {d.name}
                     </span>
