@@ -3,11 +3,11 @@ import { useRef } from 'react';
 import Article from '../Article.mdx';
 
 // General
-// import BackToTop from './components/general/BackToTop.jsx';
-// import ChartDataWrapper from './components/general/ChartDataWrapper.jsx';
-// import Image from './components/general/Image.jsx';
-// import ProgressBar from './components/general/ProgressBar.jsx';
-// import Quote from './components/general/Quote.jsx';
+// import BackToTop from '@unctad-infovis/general-tools/components/BackToTop.jsx';
+// import ChartDataWrapper from '@unctad-infovis/general-tools/components/ChartDataWrapper.jsx';
+// import Image from '@unctad-infovis/general-tools/components/Image.jsx';
+// import ProgressBar from '@unctad-infovis/general-tools/components/ProgressBar.jsx';
+// import Quote from '@unctad-infovis/general-tools/components/Quote.jsx';
 import TileRow from './components/general/TileRow.jsx';
 
 // GSTP
@@ -16,7 +16,7 @@ import NarrativeIntro from './components/gstp/NarrativeIntro.jsx';
 import Timeline from './components/gstp/Timeline.jsx';
 import TradeShareChart from './components/gstp/TradeShareChart.jsx';
 
-import './../styles/styles.css';
+import '@unctad-infovis/general-tools/styles/styles.css';
 
 const components = {
   // BackToTop,

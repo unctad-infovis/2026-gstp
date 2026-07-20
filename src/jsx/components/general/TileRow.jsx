@@ -1,5 +1,5 @@
-import useIsVisible from './../../helpers/UseIsVisible';
-import RollingNumber from './RollingNumber.jsx';
+import RollingNumber from '@unctad-infovis/general-tools/components/RollingNumber.jsx';
+import useIsVisible from '@unctad-infovis/general-tools/helpers/UseIsVisible.js';
 import './TileRow.css';
 
 export default function TileRow({ groups = [] }) {

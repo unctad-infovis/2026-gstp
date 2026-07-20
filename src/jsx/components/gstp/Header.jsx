@@ -1,7 +1,7 @@
-import basePath from './../../helpers/BasePath';
-import useIsVisible from './../../helpers/UseIsVisible';
-import ButtonShare from './../general/ButtonShare.jsx';
-import RollingNumber from './../general/RollingNumber.jsx';
+import ButtonShare from '@unctad-infovis/general-tools/components/ButtonShare.jsx';
+import RollingNumber from '@unctad-infovis/general-tools/components/RollingNumber.jsx';
+import basePath from '@unctad-infovis/general-tools/helpers/BasePath.js';
+import useIsVisible from '@unctad-infovis/general-tools/helpers/UseIsVisible.js';
 import Nav from './Nav.jsx';
 import './Header.css';
 

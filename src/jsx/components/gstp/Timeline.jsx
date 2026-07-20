@@ -1,4 +1,4 @@
-import useIsVisible from './../../helpers/UseIsVisible';
+import useIsVisible from '@unctad-infovis/general-tools/helpers/UseIsVisible.js';
 import './Timeline.css';
 
 export default function Timeline({ description, milestones = [], title }) {
