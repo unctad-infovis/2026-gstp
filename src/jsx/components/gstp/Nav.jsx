@@ -20,10 +20,9 @@ function isInPageTarget(href) {
   return !!href && href.startsWith('.') && !href.startsWith('./');
 }
 
-function scrollToHash(event, href) {
+function scrollToTarget(href) {
   const target = document.querySelector(href);
   if (!target) return;
-  event.preventDefault();
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
 }
@@ -51,9 +50,9 @@ export default function Nav({ items = [] }) {
         const cls = `nav_btn${item.primary ? ' nav_btn--primary' : ''}${active ? ' nav_btn--active' : ''}`;
         if (isInPageTarget(item.href)) {
           return (
-            <a className={cls} href={item.href} key={item.label} onClick={event => scrollToHash(event, item.href)}>
+            <button className={cls} key={item.label} onClick={() => scrollToTarget(item.href)} type="button">
               {item.label}
-            </a>
+            </button>
           );
         }
         if (item.href) {
