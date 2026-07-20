@@ -13,7 +13,7 @@
     { "text_lines": ["Expanding market access,", "diversifying trade, strengthening"], "highlight": "resilience" }
   ],
 
-  "nav": [{ "label": "News", "href": "#news" }, { "label": "Publications", "href": "#publications" }, { "label": "Resources", "href": "#resources" }],
+  "nav": [{ "label": "News", "href": ".news-section" }, { "label": "Publications", "href": ".publications-section" }, { "label": "Videos", "href": ".videos-section" }],
 
   "ni_title": "Why it matters?",
   "ni_description": "As global trade grows more fragmented and protectionist, the GSTP gives developing countries a preferential channel to diversify export markets and build economic resilience. GSTP economies represent a combined $18 trillion market, accounting for 18% of global merchandise imports.",

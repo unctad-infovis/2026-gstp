@@ -16,8 +16,12 @@ function scrollToY() {
   requestAnimationFrame(step);
 }
 
+function isInPageTarget(href) {
+  return !!href && href.startsWith('.') && !href.startsWith('./');
+}
+
 function scrollToHash(event, href) {
-  const target = document.getElementById(href.slice(1));
+  const target = document.querySelector(href);
   if (!target) return;
   event.preventDefault();
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -25,7 +29,7 @@ function scrollToHash(event, href) {
 }
 
 function isCurrentPage(href) {
-  if (!href || href.startsWith('#')) return false;
+  if (!href || isInPageTarget(href)) return false;
   if (typeof window === 'undefined') return false;
   const pathname = window.location.pathname.replace(/\/$/, '');
   if (href.startsWith('http')) {
@@ -45,7 +49,7 @@ export default function Nav({ items = [] }) {
       {items.map(item => {
         const active = isCurrentPage(item.href);
         const cls = `nav_btn${item.primary ? ' nav_btn--primary' : ''}${active ? ' nav_btn--active' : ''}`;
-        if (item.href?.startsWith('#')) {
+        if (isInPageTarget(item.href)) {
           return (
             <a className={cls} href={item.href} key={item.label} onClick={event => scrollToHash(event, item.href)}>
               {item.label}

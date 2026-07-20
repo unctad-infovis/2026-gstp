@@ -1,7 +1,6 @@
 import { max } from 'd3-array';
 import { scaleBand, scaleLinear } from 'd3-scale';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import useIsVisible from './../../helpers/UseIsVisible';
 import './TradeShareChart.css';
 
 const CATEGORY_COLOR_VAR = {
@@ -17,7 +16,7 @@ export default function TradeShareChart({ data = [], legend = [], note, source, 
   const [fitsLabel, setFitsLabel] = useState([]);
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [barsSettled, setBarsSettled] = useState(false);
-  const [chartRef, chartInView] = useIsVisible(0.2);
+  const [chartInView, setChartInView] = useState(false);
   const hideTimerRef = useRef(null);
 
   function showTooltip(idx) {
@@ -43,11 +42,30 @@ export default function TradeShareChart({ data = [], legend = [], note, source, 
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const el = plotRef.current;
+    if (!el) return;
+    // .tc_plot has a bounded CSS height (clamp(280px, 32vw, 420px)), so unlike the shared
+    // useIsVisible hook's width-based clamp (meant for arbitrarily tall sections), this
+    // element always comfortably fits within any real viewport at a 0.4 ratio.
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setChartInView(true);
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.4 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   useEffect(() => () => hideTimerRef.current && clearTimeout(hideTimerRef.current), []);
 
   useEffect(() => {
     if (!chartInView) return;
-    const timer = setTimeout(() => setBarsSettled(true), data.length * 18 + 400);
+    const timer = setTimeout(() => setBarsSettled(true), data.length * 27 + 600);
     return () => clearTimeout(timer);
   }, [chartInView, data.length]);
 
@@ -76,7 +94,7 @@ export default function TradeShareChart({ data = [], legend = [], note, source, 
   }, [plotSize]);
 
   return (
-    <div className="tc_container" ref={chartRef}>
+    <div className="tc_container">
       <div className="tc_title_row">
         <span className="tc_title_icon" />
         <h2 className="tc_title">{title}</h2>
@@ -109,7 +127,7 @@ export default function TradeShareChart({ data = [], legend = [], note, source, 
               {data.map((d, idx) => {
                 const targetY = yScale(d.value);
                 const targetHeight = plotSize.height - targetY;
-                return <rect className="tc_bar" fill={`var(${CATEGORY_COLOR_VAR[d.category]})`} height={chartInView ? targetHeight : 0} key={d.name} style={{ transitionDelay: `${idx * 18}ms` }} width={xScale.bandwidth()} x={xScale(d.name)} y={chartInView ? targetY : plotSize.height} />;
+                return <rect className="tc_bar" fill={`var(${CATEGORY_COLOR_VAR[d.category]})`} height={chartInView ? targetHeight : 0} key={d.name} style={{ transitionDelay: `${idx * 27}ms` }} width={xScale.bandwidth()} x={xScale(d.name)} y={chartInView ? targetY : plotSize.height} />;
               })}
             </svg>
 
@@ -128,7 +146,7 @@ export default function TradeShareChart({ data = [], legend = [], note, source, 
                     onFocus={() => showTooltip(idx)}
                     onMouseEnter={() => showTooltip(idx)}
                     onMouseLeave={scheduleHideTooltip}
-                    style={{ height: chartInView ? targetHeight : 0, left: xScale(d.name), top: chartInView ? targetY : plotSize.height, transitionDelay: `${idx * 18}ms`, width: xScale.bandwidth() }}
+                    style={{ height: chartInView ? targetHeight : 0, left: xScale(d.name), top: chartInView ? targetY : plotSize.height, transitionDelay: `${idx * 27}ms`, width: xScale.bandwidth() }}
                     type="button"
                   >
                     {visible && <span className="tc_value">{Math.round(d.value)}%</span>}
@@ -158,7 +176,7 @@ export default function TradeShareChart({ data = [], legend = [], note, source, 
         <a className={`tc_link tc_link--primary${barsSettled ? ' tc_link--visible' : ''}`} href="https://unctadstat.unctad.org/datacentre/dataviewer/US.GSTP_TradeMatrix" rel="noreferrer" style={{ transitionDelay: '0ms' }} target="_blank">
           GSTP Database (UNCTADstat Data Centre)
         </a>
-        <a className={`tc_link${barsSettled ? ' tc_link--visible' : ''}`} href="https://unctadstat.unctad.org/insights/theme/320" rel="noreferrer" style={{ transitionDelay: '150ms' }} target="_blank">
+        <a className={`tc_link${barsSettled ? ' tc_link--visible' : ''}`} href="https://unctadstat.unctad.org/insights/theme/320" rel="noreferrer" style={{ transitionDelay: '225ms' }} target="_blank">
           See more data insights
         </a>
       </div>

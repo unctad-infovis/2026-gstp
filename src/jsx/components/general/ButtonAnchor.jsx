@@ -29,8 +29,9 @@ function ButtonAnchor({ className, text, url }) {
   }, [url]);
 
   const handleClick = (event, selector) => {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     window.appRef.current.querySelector(selector)?.scrollIntoView({
-      behavior: 'smooth',
+      behavior: reduceMotion ? 'auto' : 'smooth',
       block: 'start'
     });
     event.preventDefault();

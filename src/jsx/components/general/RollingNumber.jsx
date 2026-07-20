@@ -8,6 +8,12 @@ export default function RollingNumber({ target, duration = 1200, decimals = 0, i
   useEffect(() => {
     if (!inView || firedRef.current) return;
     firedRef.current = true;
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setValue(target);
+      return;
+    }
+
     let startTs = null;
 
     function tick(ts) {

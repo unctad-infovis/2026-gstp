@@ -149,9 +149,9 @@
     background: var(--un-color-blue);
     border-color: var(--un-color-blue);
     box-shadow: 0 0 0 4px rgba(0, 158, 219, 0.25);
-  }
-  .tl_track--inview .tl_item--current .tl_marker {
-    animation: tl_pulse 2s ease-in-out 0.5s infinite;
+    .tl_track--inview & {
+      animation: tl_pulse 2s ease-in-out 0.5s infinite;
+    }
   }
   @media (max-width: 700px) {
     .tl_track {
@@ -219,12 +219,16 @@
     .tl_marker {
       transition: none;
     }
-    .tl_marker_row:before,
-    .tl_marker_row:after {
-      transition: none;
+    .tl_marker_row {
+      &:before,
+      &:after {
+        transition: none;
+      }
     }
-    .tl_track--inview .tl_item--current .tl_marker {
-      animation: none;
+    .tl_track--inview {
+      .tl_item--current .tl_marker {
+        animation: none;
+      }
     }
   }
 }
