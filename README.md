@@ -16,9 +16,14 @@ Content is authored in MDX and rendered as a standalone React application embedd
 <div class="app-root-2026-gstp" id="app-root-2026-gstp">
   Loading...
 </div>
+<noscript>Your browser does not support Javascript!</noscript>
 ```
 
 Update the `?v=` query parameter to match the current build version to bust the cache.
+
+## Used in
+
+* [Global System of Trade Preferences](https://unctad.org/topic/trade-agreements/global-system-of-trade-preferences)
 
 ## Rights of usage
 
@@ -28,7 +33,7 @@ Contact Teemo Tebest.
 
 This is a Vite + React project.
 
-* `npm run install`
+* `npm install`
 * `npm run start`
 
 Project should start at: http://localhost:8080
