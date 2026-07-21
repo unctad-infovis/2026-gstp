@@ -35,7 +35,7 @@
       "title": "Economic Welfare",
       "description": "The São Paulo Round could unlock substantial economic gains for developing countries — cutting tariffs across thousands of traded products and expanding preferential market access.",
       "tiles": [
-        { "prefix": "", "value": 14, "decimals": 0, "suffix": " billion", "unit": "of dollars", "label": "Potential welfare gains", "description": "Under the São Paulo Round." },
+        { "prefix": "", "value": 14, "decimals": 0, "suffix": " billion", "label": "Potential welfare gains", "description": "Under the São Paulo Round." },
         { "prefix": "", "value": 20, "decimals": 0, "suffix": "%", "label": "Tariff reduction", "description": "São Paulo Round Protocol" },
         { "prefix": "", "value": 47000, "decimals": 0, "suffix": "", "label": "Products covered", "description": "Traded products subject to preferential tariff cuts under the São Paulo Round." }
       ]
