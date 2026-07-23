@@ -4,9 +4,9 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import './TradeShareChart.css';
 
 const CATEGORY_COLOR_VAR = {
-  ratifying: '--un-color-green-brand',
+  ratifying: '--un-color-blue-darkest',
   signatory: '--un-color-yellow',
-  participant: '--un-color-blue-brand'
+  participant: '--un-color-blue'
 };
 
 export default function TradeShareChart({ data = [], legend = [], note, source, subtitle, title }) {
