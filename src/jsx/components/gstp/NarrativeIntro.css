@@ -31,17 +31,13 @@
       }
     }
     .ni_hero_content {
-      max-width: 560px;
-      position: relative;
-      z-index: 1;
-    }
-    .ni_def {
       border-left: 1px solid rgba(255, 255, 255, 0.12);
+      max-width: 560px;
       padding-left: clamp(32px, 5vw, 64px);
       position: relative;
       z-index: 1;
       @media all and (max-width: 840px) {
-        &.ni_def {
+        &.ni_hero_content {
           border-left: none;
           border-top: 1px solid rgba(255, 255, 255, 0.12);
           margin-top: 0;
@@ -49,6 +45,10 @@
           padding-top: clamp(24px, 4vw, 40px);
         }
       }
+    }
+    .ni_def {
+      position: relative;
+      z-index: 1;
     }
     .ni_def_eyebrow {
       align-items: center;
@@ -106,6 +106,26 @@
       line-height: var(--un-line-height-normal);
       margin: 0;
       padding: 0;
+    }
+    .ni_def_links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .ni_def_link {
+      background: var(--un-color-orange-brand);
+      border: 1.5px solid var(--un-color-orange-brand);
+      border-radius: 100px;
+      color: #fff;
+      font-size: var(--un-font-size-xxs);
+      font-weight: var(--un-font-weight-bold);
+      padding: 5px 22px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+      &:hover {
+        background: var(--un-color-orange-brand-shade);
+      }
     }
     .ni_section_label {
       align-items: center;

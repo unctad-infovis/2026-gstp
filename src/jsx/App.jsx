@@ -12,6 +12,7 @@ import TileRow from './components/general/TileRow.jsx';
 
 // GSTP
 import Header from './components/gstp/Header.jsx';
+import Members from './components/gstp/Members.jsx';
 import NarrativeIntro from './components/gstp/NarrativeIntro.jsx';
 import Timeline from './components/gstp/Timeline.jsx';
 import TradeShareChart from './components/gstp/TradeShareChart.jsx';
@@ -25,6 +26,7 @@ const components = {
   Header,
   // HeaderChapter,
   // Image,
+  Members,
   NarrativeIntro,
   // ProgressBar,
   // Quote,
