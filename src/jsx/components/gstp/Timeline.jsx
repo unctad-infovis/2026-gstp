@@ -1,7 +1,7 @@
 import useIsVisible from '@unctad-infovis/general-tools/helpers/UseIsVisible.js';
 import './Timeline.css';
 
-export default function Timeline({ description, milestones = [], title }) {
+export default function Timeline({ description, eyebrow, milestones = [], title }) {
   const [trackRef, trackInView] = useIsVisible(0.3);
 
   return (
@@ -9,7 +9,7 @@ export default function Timeline({ description, milestones = [], title }) {
       <div className="tl_intro">
         <div className="tl_eyebrow">
           <span className="tl_eyebrow_line" />
-          Timeline
+          {eyebrow}
         </div>
         <h2 className="tl_title">{title}</h2>
         {description && <p className="tl_desc">{description}</p>}

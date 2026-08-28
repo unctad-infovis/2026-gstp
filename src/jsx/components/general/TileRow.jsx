@@ -2,14 +2,14 @@ import RollingNumber from '@unctad-infovis/general-tools/components/RollingNumbe
 import useIsVisible from '@unctad-infovis/general-tools/helpers/UseIsVisible.js';
 import './TileRow.css';
 
-export default function TileRow({ groups = [] }) {
+export default function TileRow({ eyebrow, groups = [] }) {
   const [groupsRef, groupsInView] = useIsVisible(0.3);
 
   return (
     <div className="tr_container">
       <div className="tr_eyebrow">
         <span className="tr_eyebrow_line" />
-        Key figures
+        {eyebrow}
       </div>
       <div className={`tr_groups${groupsInView ? ' tr_groups--inview' : ''}`} ref={groupsRef}>
         {groups.map(group => {

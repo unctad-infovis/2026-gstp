@@ -7,9 +7,8 @@ const CATEGORY_COLOR_VAR = {
   signatory: '--un-color-yellow',
   participant: '--un-color-blue'
 };
-const MERCOSUR_MEMBERS = 'Argentina, Bolivia, Brazil, Paraguay and Uruguay';
 
-export default function Members({ data = [], legend = [] }) {
+export default function Members({ chip_label, data = [], eyebrow, legend = [], mercosur_members, mercosur_prefix, title }) {
   const countries = data.filter(d => d.name !== 'MERCOSUR').sort((a, b) => a.name.localeCompare(b.name));
   const mercosur = data.find(d => d.name === 'MERCOSUR');
   const members = mercosur ? [...countries, mercosur] : countries;
@@ -19,9 +18,9 @@ export default function Members({ data = [], legend = [] }) {
       <div className="mb_intro">
         <div className="mb_eyebrow">
           <span className="mb_eyebrow_line" />
-          Membership
+          {eyebrow}
         </div>
-        <h2 className="mb_title">Participating countries</h2>
+        <h2 className="mb_title">{title}</h2>
       </div>
       <div className="mb_content">
         <div className="mb_legend">
@@ -35,8 +34,8 @@ export default function Members({ data = [], legend = [] }) {
         <div className="mb_grid">
           {members.map(item =>
             item.name === 'MERCOSUR' ? (
-              <Tooltip className="mb_tooltip" content={`MERCOSUR: ${MERCOSUR_MEMBERS}`} key={item.name}>
-                <span className="mb_chip_bloc">+ MERCOSUR</span>
+              <Tooltip className="mb_tooltip" content={`${mercosur_prefix} ${mercosur_members}`} key={item.name}>
+                <span className="mb_chip_bloc">{chip_label}</span>
               </Tooltip>
             ) : (
               <Tooltip className="mb_tooltip" content={item.name} key={item.name}>

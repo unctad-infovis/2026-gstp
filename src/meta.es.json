@@ -1,0 +1,122 @@
+{
+  "show_site_header": false,
+
+  "hero_image": "assets/img/2026-gstp_hero.webp",
+  "title": "Bienvenido al Sistema Global de Preferencias Comerciales",
+  "title_highlight": "Sistema Global de Preferencias Comerciales",
+  "subtitle": "Un acuerdo comercial diseñado por y para los países en desarrollo.",
+
+  "stats": [
+    { "prefix": "", "value": 4, "decimals": 0, "suffix": " mil millones+", "label": "Personas" },
+    { "prefix": "$", "value": 18, "decimals": 0, "suffix": " billones", "label": "Tamaño del mercado" },
+    { "prefix": "", "value": 18, "decimals": 0, "suffix": "%", "label": "De las importaciones mundiales de mercancías" },
+    { "text_lines": ["Ampliar el acceso a los mercados,", "diversificar el comercio, fortalecer"], "highlight": "la resiliencia" }
+  ],
+
+  "nav": [{ "label": "Noticias", "href": ".news-section" }, { "label": "Publicaciones", "href": ".publications-section" }, { "label": "Videos", "href": ".videos-section" }],
+
+  "ni_eyebrow_concepts": "Conceptos y contexto",
+  "ni_eyebrow_bigpicture": "Panorama general",
+  "ni_link1_text": "Acuerdo del SGPC (1988)",
+  "ni_link1_href": "https://unctad.org/system/files/official-document/ditcmisc57_en.pdf",
+  "ni_link2_text": "Protocolo de la Ronda de São Paulo del SGPC (2010)",
+  "ni_link2_href": "https://unctad.org/system/files/official-document/gstp-sprncfozd3_en.pdf",
+
+  "ni_title": "¿Por qué es importante?",
+  "ni_description": "A medida que el comercio mundial se fragmenta y se vuelve más proteccionista, el SGPC ofrece a los países en desarrollo un canal preferencial para diversificar sus mercados de exportación y fortalecer la resiliencia económica. Las economías del SGPC representan un mercado combinado de 18 billones de dólares, lo que equivale al 18% de las importaciones mundiales de mercancías.",
+  "ni_description2": "El Acuerdo también se acerca a un hito importante: la Ronda de São Paulo, que ofrece mayores recortes arancelarios en miles de productos, está a solo una ratificación de su entrada en vigor, un paso que podría generar hasta 14 000 millones de dólares en beneficios de bienestar para las economías participantes.",
+
+  "ni_def_title": "¿Qué es el SGPC?",
+  "ni_def_statement_prefix": "El Sistema Global de Preferencias Comerciales (SGPC) podría desbloquear un trato arancelario preferencial entre",
+  "ni_def_badge": "42",
+  "ni_def_statement_suffix": "países en desarrollo participantes, reduciendo los aranceles sobre miles de productos comercializados.",
+  "ni_def_description": "El SGPC es el único acuerdo comercial interregional creado exclusivamente por y para los países en desarrollo. Establecido en 1988, amplía el comercio Sur-Sur mediante el acceso preferencial a los mercados. El Comité de Participantes es el órgano rector del SGPC, y UNCTAD actúa como su secretaría.",
+  "ni_def_attribution": "UNCTAD, Sistema Global de Preferencias Comerciales entre los Países en Desarrollo.",
+
+  "tl_eyebrow": "Cronología",
+  "tl_title": "Hito histórico",
+  "tl_description": "Desde hace más de tres décadas, el SGPC ha proporcionado un marco para la expansión del comercio entre los países en desarrollo. Hoy, el Acuerdo se acerca a un hito importante con la entrada en vigor de la Ronda de São Paulo: se necesita una ratificación adicional.",
+  "tl_milestones": [{ "year": "1988", "label": "Adopción del Acuerdo del SGPC" }, { "year": "1989", "label": "El Acuerdo entra en vigor" }, { "year": "2010", "label": "Conclusión de la Ronda de São Paulo" }, { "year": "Hoy", "label": "A una ratificación de la entrada en vigor", "current": true }],
+
+  "tr_eyebrow": "Cifras clave",
+  "tr_groups": [
+    {
+      "title": "Bienestar económico",
+      "description": "La Ronda de São Paulo podría generar importantes beneficios económicos para los países en desarrollo, al reducir los aranceles en miles de productos comercializados y ampliar el acceso preferencial a los mercados.",
+      "tiles": [
+        { "prefix": "$", "value": 14, "decimals": 0, "suffix": " mil millones", "label": "Beneficios de bienestar potenciales", "description": "En el marco de la Ronda de São Paulo." },
+        { "prefix": "", "value": 20, "decimals": 0, "suffix": "%", "label": "Reducción arancelaria", "description": "Protocolo de la Ronda de São Paulo" },
+        { "prefix": "", "value": 47000, "decimals": 0, "suffix": "", "label": "Productos cubiertos", "description": "Productos comercializados sujetos a reducciones arancelarias preferenciales en el marco de la Ronda de São Paulo." }
+      ]
+    },
+    {
+      "title": "Resiliencia mundial",
+      "description": "A medida que la economía mundial se vuelve más incierta, la expansión del comercio Sur-Sur ofrece nuevas oportunidades para diversificar los mercados de exportación, fortalecer la resiliencia y fomentar un crecimiento económico sostenible.",
+      "tiles": []
+    }
+  ],
+
+  "mb_eyebrow": "Membresía",
+  "mb_title": "Países participantes",
+  "mb_mercosur_prefix": "MERCOSUR:",
+  "mb_mercosur_members": "Argentina, Bolivia, Brasil, Paraguay y Uruguay",
+  "mb_chip_label": "+ MERCOSUR",
+
+  "tc_title": "El comercio intra-SGPC representa casi una cuarta parte de las exportaciones de los países participantes",
+  "tc_subtitle": "Proporción de las exportaciones a los países participantes en el Sistema Global de Preferencias Comerciales, porcentaje, 2025",
+  "tc_legend": [{ "category": "ratifying", "label": "Parte que ha ratificado el Protocolo de la Ronda de São Paulo del SGPC" }, { "category": "signatory", "label": "Otro signatario del Protocolo de la Ronda de São Paulo del SGPC" }, { "category": "participant", "label": "Otro participante en el SGPC" }],
+  "tc_data": [
+    { "name": "Benin", "code": "bj", "value": 52.95, "category": "participant" },
+    { "name": "Irán (República Islámica del)", "code": "ir", "value": 46.0, "category": "participant" },
+    { "name": "Bolivia (Estado Plurinacional de)", "code": "bo", "value": 40.2, "category": "participant" },
+    { "name": "Malasia", "code": "my", "value": 39.01, "category": "ratifying" },
+    { "name": "Indonesia", "code": "id", "value": 37.18, "category": "signatory" },
+    { "name": "Iraq", "code": "iq", "value": 36.99, "category": "participant" },
+    { "name": "Venezuela (República Bolivariana de)", "code": "ve", "value": 35.2, "category": "participant" },
+    { "name": "Mozambique", "code": "mz", "value": 34.51, "category": "participant" },
+    { "name": "Singapur", "code": "sg", "value": 34.36, "category": "participant" },
+    { "name": "Argentina", "code": "ar", "value": 32.75, "category": "signatory" },
+    { "name": "Myanmar", "code": "mm", "value": 32.13, "category": "participant" },
+    { "name": "República Unida de Tanzanía", "code": "tz", "value": 28.97, "category": "participant" },
+    { "name": "Nigeria", "code": "ng", "value": 26.99, "category": "participant" },
+    { "name": "República de Corea", "code": "kr", "value": 24.52, "category": "signatory" },
+    { "name": "MERCOSUR", "value": 24.13, "category": "signatory" },
+    { "name": "Tailandia", "code": "th", "value": 23.6, "category": "participant" },
+    { "name": "Brasil", "code": "br", "value": 22.5, "category": "signatory" },
+    { "name": "Guinea", "code": "gn", "value": 22.32, "category": "participant" },
+    { "name": "Trinidad y Tabago", "code": "tt", "value": 22.32, "category": "participant" },
+    { "name": "Chile", "code": "cl", "value": 21.17, "category": "participant" },
+    { "name": "Paraguay", "code": "py", "value": 19.58, "category": "signatory" },
+    { "name": "Perú", "code": "pe", "value": 19.51, "category": "participant" },
+    { "name": "Egipto", "code": "eg", "value": 19.36, "category": "signatory" },
+    { "name": "Sri Lanka", "code": "lk", "value": 18.91, "category": "participant" },
+    { "name": "Filipinas", "code": "ph", "value": 18.59, "category": "participant" },
+    { "name": "India", "code": "in", "value": 18.48, "category": "ratifying" },
+    { "name": "Camerún", "code": "cm", "value": 17.31, "category": "participant" },
+    { "name": "Marruecos", "code": "ma", "value": 15.32, "category": "signatory" },
+    { "name": "República Popular Democrática de Corea", "code": "kp", "value": 14.66, "category": "participant" },
+    { "name": "Nicaragua", "code": "ni", "value": 14.34, "category": "participant" },
+    { "name": "Sudán", "code": "sd", "value": 13.47, "category": "participant" },
+    { "name": "Pakistán", "code": "pk", "value": 12.62, "category": "participant" },
+    { "name": "Ghana", "code": "gh", "value": 12.4, "category": "participant" },
+    { "name": "Uruguay", "code": "uy", "value": 12.38, "category": "signatory" },
+    { "name": "Cuba", "code": "cu", "value": 12.17, "category": "ratifying" },
+    { "name": "Viet Nam", "code": "vn", "value": 12.0, "category": "participant" },
+    { "name": "Ecuador", "code": "ec", "value": 11.91, "category": "participant" },
+    { "name": "Argelia", "code": "dz", "value": 11.76, "category": "participant" },
+    { "name": "Guyana", "code": "gy", "value": 11.25, "category": "participant" },
+    { "name": "Túnez", "code": "tn", "value": 11.15, "category": "participant" },
+    { "name": "Bangladesh", "code": "bd", "value": 7.69, "category": "participant" },
+    { "name": "Zimbabwe", "code": "zw", "value": 5.53, "category": "participant" },
+    { "name": "Libia", "code": "ly", "value": 5.33, "category": "participant" },
+    { "name": "México", "code": "mx", "value": 3.24, "category": "participant" }
+  ],
+  "tc_source_label": "Fuente:",
+  "tc_source": "ONU Comercio y Desarrollo (UNCTAD), a partir de UNCTADstat.",
+  "tc_note_label": "Nota:",
+  "tc_note": "El comercio intra-MERCOSUR no se contabiliza en el comercio intra-SGPC. El valor del MERCOSUR refleja las exportaciones extra-MERCOSUR de sus miembros (Argentina, Brasil, Paraguay y Uruguay).",
+  "tc_link1_text": "Base de Datos del SGPC (Centro de Datos de UNCTADstat)",
+  "tc_link1_href": "https://unctadstat.unctad.org/datacentre/dataviewer/US.GSTP_TradeMatrix",
+  "tc_link2_text": "Ver más análisis de datos",
+  "tc_link2_href": "https://unctadstat.unctad.org/insights/theme/320"
+}

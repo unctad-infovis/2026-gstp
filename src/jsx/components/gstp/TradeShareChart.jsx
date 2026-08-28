@@ -9,7 +9,7 @@ const CATEGORY_COLOR_VAR = {
   participant: '--un-color-blue'
 };
 
-export default function TradeShareChart({ data = [], legend = [], note, source, subtitle, title }) {
+export default function TradeShareChart({ data = [], legend = [], link1_href, link1_text, link2_href, link2_text, note, noteLabel, source, sourceLabel, subtitle, title }) {
   const plotRef = useRef(null);
   const labelRefs = useRef([]);
   const [plotSize, setPlotSize] = useState({ width: 0, height: 320 });
@@ -163,21 +163,21 @@ export default function TradeShareChart({ data = [], legend = [], note, source, 
 
       {source && (
         <p className="tc_source">
-          <em>Source:</em> {source}
+          <em>{sourceLabel}</em> {source}
         </p>
       )}
       {note && (
         <p className="tc_note">
-          <em>Note:</em> {note}
+          <em>{noteLabel}</em> {note}
         </p>
       )}
 
       <div className="tc_links">
-        <a className={`tc_link tc_link--primary${barsSettled ? ' tc_link--visible' : ''}`} href="https://unctadstat.unctad.org/datacentre/dataviewer/US.GSTP_TradeMatrix" rel="noreferrer" style={{ transitionDelay: '0ms' }} target="_blank">
-          GSTP Database (UNCTADstat Data Centre)
+        <a className={`tc_link tc_link--primary${barsSettled ? ' tc_link--visible' : ''}`} href={link1_href} rel="noreferrer" style={{ transitionDelay: '0ms' }} target="_blank">
+          {link1_text}
         </a>
-        <a className={`tc_link${barsSettled ? ' tc_link--visible' : ''}`} href="https://unctadstat.unctad.org/insights/theme/320" rel="noreferrer" style={{ transitionDelay: '225ms' }} target="_blank">
-          See more data insights
+        <a className={`tc_link${barsSettled ? ' tc_link--visible' : ''}`} href={link2_href} rel="noreferrer" style={{ transitionDelay: '225ms' }} target="_blank">
+          {link2_text}
         </a>
       </div>
     </div>

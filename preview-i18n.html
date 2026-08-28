@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="stylesheet" href="/assets/font/fonts.css" />
+    <title>2026-gstp — language preview</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .lang_preview_divider {
+        background: #0b1f3a;
+        color: #fff;
+        font: 700 13px/1.4 sans-serif;
+        letter-spacing: 0.05em;
+        padding: 10px 24px;
+        position: sticky;
+        text-transform: uppercase;
+        top: 0;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lang_preview_divider">English (en)</div>
+    <div class="app-root-2026-gstp" data-preview-lang="en" id="app-root-2026-gstp" lang="en"></div>
+
+    <div class="lang_preview_divider">Español (es)</div>
+    <div class="app-root-2026-gstp" data-preview-lang="es" id="app-root-2026-gstp" lang="es"></div>
+
+    <div class="lang_preview_divider">Français (fr)</div>
+    <div class="app-root-2026-gstp" data-preview-lang="fr" id="app-root-2026-gstp" lang="fr"></div>
+
+    <script type="module" src="/src/jsx/IndexPreview.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+{
+  "show_site_header": false,
+
+  "hero_image": "assets/img/2026-gstp_hero.webp",
+  "title": "Bienvenue dans le Système global de préférences commerciales",
+  "title_highlight": "Système global de préférences commerciales",
+  "subtitle": "Un accord commercial conçu par et pour les pays en développement.",
+
+  "stats": [
+    { "prefix": "", "value": 4, "decimals": 0, "suffix": " milliards+", "label": "Personnes" },
+    { "prefix": "$", "value": 18, "decimals": 0, "suffix": " billions", "label": "Taille du marché" },
+    { "prefix": "", "value": 18, "decimals": 0, "suffix": " %", "label": "Des importations mondiales de marchandises" },
+    { "text_lines": ["Élargir l'accès aux marchés,", "diversifier les échanges, renforcer"], "highlight": "la résilience" }
+  ],
+
+  "nav": [{ "label": "Actualités", "href": ".news-section" }, { "label": "Publications", "href": ".publications-section" }, { "label": "Vidéos", "href": ".videos-section" }],
+
+  "ni_eyebrow_concepts": "Concepts et contexte",
+  "ni_eyebrow_bigpicture": "Vue d'ensemble",
+  "ni_link1_text": "Accord du SGPC (1988)",
+  "ni_link1_href": "https://unctad.org/system/files/official-document/ditcmisc57_en.pdf",
+  "ni_link2_text": "Protocole du Cycle de São Paulo du SGPC (2010)",
+  "ni_link2_href": "https://unctad.org/system/files/official-document/gstp-sprncfozd3_en.pdf",
+
+  "ni_title": "Pourquoi est-ce important ?",
+  "ni_description": "Alors que le commerce mondial devient de plus en plus fragmenté et protectionniste, le SGPC offre aux pays en développement un canal préférentiel pour diversifier leurs marchés d'exportation et renforcer leur résilience économique. Les économies du SGPC représentent un marché combiné de 18 000 milliards de dollars, soit 18 % des importations mondiales de marchandises.",
+  "ni_description2": "L'Accord approche également d'une étape majeure : le Cycle de São Paulo, qui prévoit des réductions tarifaires plus importantes sur des milliers de produits, n'est plus qu'à une ratification de son entrée en vigueur — une étape qui pourrait débloquer jusqu'à 14 milliards de dollars de gains de bien-être pour les économies participantes.",
+
+  "ni_def_title": "Qu'est-ce que le SGPC ?",
+  "ni_def_statement_prefix": "Le Système global de préférences commerciales (SGPC) pourrait débloquer un traitement tarifaire préférentiel entre",
+  "ni_def_badge": "42",
+  "ni_def_statement_suffix": "pays en développement participants, réduisant les droits de douane sur des milliers de produits échangés.",
+  "ni_def_description": "Le SGPC est le seul accord commercial interrégional créé exclusivement par et pour les pays en développement. Établi en 1988, il élargit le commerce Sud-Sud grâce à un accès préférentiel aux marchés. Le Comité des participants est l'organe directeur du SGPC, la CNUCED en assurant le secrétariat.",
+  "ni_def_attribution": "CNUCED, Système global de préférences commerciales entre pays en développement.",
+
+  "tl_eyebrow": "Chronologie",
+  "tl_title": "Étape historique",
+  "tl_description": "Depuis plus de trois décennies, le SGPC constitue un cadre pour l'expansion du commerce entre les pays en développement. Aujourd'hui, l'Accord approche d'une étape importante avec l'entrée en vigueur du Cycle de São Paulo – une ratification supplémentaire est nécessaire.",
+  "tl_milestones": [{ "year": "1988", "label": "Adoption de l'Accord du SGPC" }, { "year": "1989", "label": "L'Accord entre en vigueur" }, { "year": "2010", "label": "Conclusion du Cycle de São Paulo" }, { "year": "Aujourd'hui", "label": "À une ratification de l'entrée en vigueur", "current": true }],
+
+  "tr_eyebrow": "Chiffres clés",
+  "tr_groups": [
+    {
+      "title": "Bien-être économique",
+      "description": "Le Cycle de São Paulo pourrait générer des gains économiques substantiels pour les pays en développement — en réduisant les droits de douane sur des milliers de produits échangés et en élargissant l'accès préférentiel aux marchés.",
+      "tiles": [
+        { "prefix": "$", "value": 14, "decimals": 0, "suffix": " milliards", "label": "Gains de bien-être potentiels", "description": "Dans le cadre du Cycle de São Paulo." },
+        { "prefix": "", "value": 20, "decimals": 0, "suffix": " %", "label": "Réduction tarifaire", "description": "Protocole du Cycle de São Paulo" },
+        { "prefix": "", "value": 47000, "decimals": 0, "suffix": "", "label": "Produits couverts", "description": "Produits échangés soumis à des réductions tarifaires préférentielles dans le cadre du Cycle de São Paulo." }
+      ]
+    },
+    {
+      "title": "Résilience mondiale",
+      "description": "Alors que l'économie mondiale devient plus incertaine, l'expansion du commerce Sud-Sud offre de nouvelles possibilités de diversifier les marchés d'exportation, de renforcer la résilience et de favoriser une croissance économique durable.",
+      "tiles": []
+    }
+  ],
+
+  "mb_eyebrow": "Adhésion",
+  "mb_title": "Pays participants",
+  "mb_mercosur_prefix": "MERCOSUR :",
+  "mb_mercosur_members": "Argentine, Bolivie, Brésil, Paraguay et Uruguay",
+  "mb_chip_label": "+ MERCOSUR",
+
+  "tc_title": "Le commerce intra-SGPC représente près d'un quart des exportations des pays participants",
+  "tc_subtitle": "Part des exportations vers les pays participant au Système global de préférences commerciales, pourcentage, 2025",
+  "tc_legend": [{ "category": "ratifying", "label": "Partie ayant ratifié le Protocole du Cycle de São Paulo du SGPC" }, { "category": "signatory", "label": "Autre signataire du Protocole du Cycle de São Paulo du SGPC" }, { "category": "participant", "label": "Autre participant au SGPC" }],
+  "tc_data": [
+    { "name": "Bénin", "code": "bj", "value": 52.95, "category": "participant" },
+    { "name": "Iran (République islamique d')", "code": "ir", "value": 46.0, "category": "participant" },
+    { "name": "Bolivie (État plurinational de)", "code": "bo", "value": 40.2, "category": "participant" },
+    { "name": "Malaisie", "code": "my", "value": 39.01, "category": "ratifying" },
+    { "name": "Indonésie", "code": "id", "value": 37.18, "category": "signatory" },
+    { "name": "Iraq", "code": "iq", "value": 36.99, "category": "participant" },
+    { "name": "Venezuela (Rép. bolivarienne du)", "code": "ve", "value": 35.2, "category": "participant" },
+    { "name": "Mozambique", "code": "mz", "value": 34.51, "category": "participant" },
+    { "name": "Singapour", "code": "sg", "value": 34.36, "category": "participant" },
+    { "name": "Argentine", "code": "ar", "value": 32.75, "category": "signatory" },
+    { "name": "Myanmar", "code": "mm", "value": 32.13, "category": "participant" },
+    { "name": "République-Unie de Tanzanie", "code": "tz", "value": 28.97, "category": "participant" },
+    { "name": "Nigéria", "code": "ng", "value": 26.99, "category": "participant" },
+    { "name": "République de Corée", "code": "kr", "value": 24.52, "category": "signatory" },
+    { "name": "MERCOSUR", "value": 24.13, "category": "signatory" },
+    { "name": "Thaïlande", "code": "th", "value": 23.6, "category": "participant" },
+    { "name": "Brésil", "code": "br", "value": 22.5, "category": "signatory" },
+    { "name": "Guinée", "code": "gn", "value": 22.32, "category": "participant" },
+    { "name": "Trinité-et-Tobago", "code": "tt", "value": 22.32, "category": "participant" },
+    { "name": "Chili", "code": "cl", "value": 21.17, "category": "participant" },
+    { "name": "Paraguay", "code": "py", "value": 19.58, "category": "signatory" },
+    { "name": "Pérou", "code": "pe", "value": 19.51, "category": "participant" },
+    { "name": "Égypte", "code": "eg", "value": 19.36, "category": "signatory" },
+    { "name": "Sri Lanka", "code": "lk", "value": 18.91, "category": "participant" },
+    { "name": "Philippines", "code": "ph", "value": 18.59, "category": "participant" },
+    { "name": "Inde", "code": "in", "value": 18.48, "category": "ratifying" },
+    { "name": "Cameroun", "code": "cm", "value": 17.31, "category": "participant" },
+    { "name": "Maroc", "code": "ma", "value": 15.32, "category": "signatory" },
+    { "name": "Rép. populaire démocratique de Corée", "code": "kp", "value": 14.66, "category": "participant" },
+    { "name": "Nicaragua", "code": "ni", "value": 14.34, "category": "participant" },
+    { "name": "Soudan", "code": "sd", "value": 13.47, "category": "participant" },
+    { "name": "Pakistan", "code": "pk", "value": 12.62, "category": "participant" },
+    { "name": "Ghana", "code": "gh", "value": 12.4, "category": "participant" },
+    { "name": "Uruguay", "code": "uy", "value": 12.38, "category": "signatory" },
+    { "name": "Cuba", "code": "cu", "value": 12.17, "category": "ratifying" },
+    { "name": "Viet Nam", "code": "vn", "value": 12.0, "category": "participant" },
+    { "name": "Équateur", "code": "ec", "value": 11.91, "category": "participant" },
+    { "name": "Algérie", "code": "dz", "value": 11.76, "category": "participant" },
+    { "name": "Guyana", "code": "gy", "value": 11.25, "category": "participant" },
+    { "name": "Tunisie", "code": "tn", "value": 11.15, "category": "participant" },
+    { "name": "Bangladesh", "code": "bd", "value": 7.69, "category": "participant" },
+    { "name": "Zimbabwe", "code": "zw", "value": 5.53, "category": "participant" },
+    { "name": "Libye", "code": "ly", "value": 5.33, "category": "participant" },
+    { "name": "Mexique", "code": "mx", "value": 3.24, "category": "participant" }
+  ],
+  "tc_source_label": "Source :",
+  "tc_source": "ONU commerce et développement (CNUCED), d'après UNCTADstat.",
+  "tc_note_label": "Note :",
+  "tc_note": "Le commerce intra-MERCOSUR n'est pas comptabilisé dans le commerce intra-SGPC. La valeur pour le MERCOSUR reflète les exportations extra-MERCOSUR de ses membres (Argentine, Brésil, Paraguay et Uruguay).",
+  "tc_link1_text": "Base de données du SGPC (Centre de données UNCTADstat)",
+  "tc_link1_href": "https://unctadstat.unctad.org/datacentre/dataviewer/US.GSTP_TradeMatrix",
+  "tc_link2_text": "Voir plus d'analyses de données",
+  "tc_link2_href": "https://unctadstat.unctad.org/insights/theme/320"
+}

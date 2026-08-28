@@ -15,6 +15,13 @@
 
   "nav": [{ "label": "News", "href": ".news-section" }, { "label": "Publications", "href": ".publications-section" }, { "label": "Videos", "href": ".videos-section" }],
 
+  "ni_eyebrow_concepts": "Concepts & context",
+  "ni_eyebrow_bigpicture": "The big picture",
+  "ni_link1_text": "GSTP Agreement (1988)",
+  "ni_link1_href": "https://unctad.org/system/files/official-document/ditcmisc57_en.pdf",
+  "ni_link2_text": "São Paulo Round Protocol of the GSTP (2010)",
+  "ni_link2_href": "https://unctad.org/system/files/official-document/gstp-sprncfozd3_en.pdf",
+
   "ni_title": "Why it matters?",
   "ni_description": "As global trade grows more fragmented and protectionist, the GSTP gives developing countries a preferential channel to diversify export markets and build economic resilience. GSTP economies represent a combined $18 trillion market, accounting for 18% of global merchandise imports.",
   "ni_description2": "The agreement is also nearing a major milestone: the São Paulo Round, offering deeper tariff cuts across thousands of products, is just one ratification away from entering into force — a step that could unlock up to $14 billion in welfare gains for participating economies.",
@@ -26,10 +33,12 @@
   "ni_def_description": "The GSTP is the only inter-regional trade agreement created exclusively by and for developing countries. Established in 1988, it expands South–South trade through preferential market access. The Committee of Participants is the GSTP's governing body, with UNCTAD serving as its Secretariat.",
   "ni_def_attribution": "UNCTAD, Global System of Trade Preferences among Developing Countries.",
 
+  "tl_eyebrow": "Timeline",
   "tl_title": "Historic milestone",
   "tl_description": "For more than three decades, the GSTP has provided a framework for expanding trade among developing countries. Today, the Agreement is approaching an important milestone with the entry into force of the São Paulo Round – one additional ratification is required.",
   "tl_milestones": [{ "year": "1988", "label": "GSTP Agreement adopted" }, { "year": "1989", "label": "Agreement enters into force" }, { "year": "2010", "label": "São Paulo Round concluded" }, { "year": "Today", "label": "One ratification away from entry into force", "current": true }],
 
+  "tr_eyebrow": "Key figures",
   "tr_groups": [
     {
       "title": "Economic welfare",
@@ -46,6 +55,12 @@
       "tiles": []
     }
   ],
+
+  "mb_eyebrow": "Membership",
+  "mb_title": "Participating countries",
+  "mb_mercosur_prefix": "MERCOSUR:",
+  "mb_mercosur_members": "Argentina, Bolivia, Brazil, Paraguay and Uruguay",
+  "mb_chip_label": "+ MERCOSUR",
 
   "tc_title": "Intra-GSTP trade accounts for almost one quarter of the participating countries' exports",
   "tc_subtitle": "Share of exports to countries participating in the Global System of Trade Preferences, percentage, 2025",
@@ -96,6 +111,12 @@
     { "name": "Libya", "code": "ly", "value": 5.33, "category": "participant" },
     { "name": "Mexico", "code": "mx", "value": 3.24, "category": "participant" }
   ],
+  "tc_source_label": "Source:",
   "tc_source": "UN Trade and Development (UNCTAD) based on UNCTADstat.",
-  "tc_note": "Intra-MERCOSUR trade is not counted in intra-GSTP trade. The value for MERCOSUR reflects the extra-MERCOSUR exports of its members (Argentina, Brazil, Paraguay, and Uruguay)."
+  "tc_note_label": "Note:",
+  "tc_note": "Intra-MERCOSUR trade is not counted in intra-GSTP trade. The value for MERCOSUR reflects the extra-MERCOSUR exports of its members (Argentina, Brazil, Paraguay, and Uruguay).",
+  "tc_link1_text": "GSTP Database (UNCTADstat Data Centre)",
+  "tc_link1_href": "https://unctadstat.unctad.org/datacentre/dataviewer/US.GSTP_TradeMatrix",
+  "tc_link2_text": "See more data insights",
+  "tc_link2_href": "https://unctadstat.unctad.org/insights/theme/320"
 }

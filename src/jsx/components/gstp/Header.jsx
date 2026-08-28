@@ -9,6 +9,7 @@ export default function Header({ hero_image, nav, stats, subtitle, title, title_
   const [statsRef, statsInView] = useIsVisible(0.3);
 
   function renderTitle() {
+    // title_highlight must remain a literal substring of title in every meta.<lang>.json — translations need to preserve this.
     if (!title_highlight || !title.includes(title_highlight)) return title;
     const [before, after] = title.split(title_highlight);
     return (
@@ -43,7 +44,7 @@ export default function Header({ hero_image, nav, stats, subtitle, title, title_
                   <div className="header_stat_value">
                     {s.prefix}
                     <RollingNumber target={s.value} decimals={s.decimals ?? 0} inView={statsInView} />
-                    {s.suffix}
+                    {s.suffix && (s.suffix.includes('%') ? s.suffix : <span className="header_stat_suffix">{s.suffix}</span>)}
                   </div>
                   <span className="header_stat_label">{s.label}</span>
                 </div>
