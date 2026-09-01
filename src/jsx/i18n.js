@@ -11,6 +11,19 @@ const META_BY_LANGUAGE = {
   fr: metaFr
 };
 
+// Locale used for Intl.NumberFormat/toLocaleString so thousands separators follow each
+// language's own convention (e.g. es-ES "4.000", fr-FR "4 000", en-US "4,000").
+const LOCALE_BY_LANGUAGE = {
+  en: 'en-US',
+  es: 'es-ES',
+  fr: 'fr-FR'
+};
+
+export function getLocale() {
+  const lang = typeof document !== 'undefined' ? document.documentElement.lang : DEFAULT_LANGUAGE;
+  return LOCALE_BY_LANGUAGE[lang] ?? LOCALE_BY_LANGUAGE[DEFAULT_LANGUAGE];
+}
+
 export function resolveLanguage(container) {
   const queryLang = new URLSearchParams(window.location.search).get('lang');
   if (SUPPORTED_LANGUAGES.includes(queryLang)) return queryLang;

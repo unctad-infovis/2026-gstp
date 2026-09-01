@@ -7,7 +7,7 @@
   "subtitle": "Un acuerdo comercial diseñado por y para los países en desarrollo.",
 
   "stats": [
-    { "prefix": "", "value": 4, "decimals": 0, "suffix": " mil millones+", "label": "Personas" },
+    { "prefix": "", "value": 4000, "decimals": 0, "suffix": " millones+", "label": "Personas" },
     { "prefix": "$", "value": 18, "decimals": 0, "suffix": " billones", "label": "Tamaño del mercado" },
     { "prefix": "", "value": 18, "decimals": 0, "suffix": "%", "label": "De las importaciones mundiales de mercancías" },
     { "text_lines": ["Ampliar el acceso a los mercados,", "diversificar el comercio, fortalecer"], "highlight": "la resiliencia" }
@@ -18,13 +18,13 @@
   "ni_eyebrow_concepts": "Conceptos y contexto",
   "ni_eyebrow_bigpicture": "Panorama general",
   "ni_link1_text": "Acuerdo del SGPC (1988)",
-  "ni_link1_href": "https://unctad.org/system/files/official-document/ditcmisc57_en.pdf",
+  "ni_link1_href": "https://unctad.org/system/files/official-document/ditcmisc57_sp_0.pdf",
   "ni_link2_text": "Protocolo de la Ronda de São Paulo del SGPC (2010)",
-  "ni_link2_href": "https://unctad.org/system/files/official-document/gstp-sprncfozd3_en.pdf",
+  "ni_link2_href": "https://unctad.org/system/files/official-document/sprncfoz3_sp_1.PDF",
 
   "ni_title": "¿Por qué es importante?",
   "ni_description": "A medida que el comercio mundial se fragmenta y se vuelve más proteccionista, el SGPC ofrece a los países en desarrollo un canal preferencial para diversificar sus mercados de exportación y fortalecer la resiliencia económica. Las economías del SGPC representan un mercado combinado de 18 billones de dólares, lo que equivale al 18% de las importaciones mundiales de mercancías.",
-  "ni_description2": "El Acuerdo también se acerca a un hito importante: la Ronda de São Paulo, que ofrece mayores recortes arancelarios en miles de productos, está a solo una ratificación de su entrada en vigor, un paso que podría generar hasta 14 000 millones de dólares en beneficios de bienestar para las economías participantes.",
+  "ni_description2": "El Acuerdo también se acerca a un hito importante: la Ronda de São Paulo, que ofrece mayores recortes arancelarios en miles de productos, está a solo una ratificación de su entrada en vigor, un paso que podría generar hasta 14.000 millones de dólares en beneficios de bienestar para las economías participantes.",
 
   "ni_def_title": "¿Qué es el SGPC?",
   "ni_def_statement_prefix": "El Sistema Global de Preferencias Comerciales (SGPC) podría desbloquear un trato arancelario preferencial entre",
@@ -58,13 +58,13 @@
 
   "mb_eyebrow": "Membresía",
   "mb_title": "Países participantes",
-  "mb_mercosur_prefix": "MERCOSUR:",
-  "mb_mercosur_members": "Argentina, Bolivia, Brasil, Paraguay y Uruguay",
+  "mb_mercosur_prefix": "MERCOSUR: a efectos del SGPC:",
+  "mb_mercosur_members": "Argentina, Brasil, Paraguay y Uruguay",
   "mb_chip_label": "+ MERCOSUR",
 
   "tc_title": "El comercio intra-SGPC representa casi una cuarta parte de las exportaciones de los países participantes",
   "tc_subtitle": "Proporción de las exportaciones a los países participantes en el Sistema Global de Preferencias Comerciales, porcentaje, 2025",
-  "tc_legend": [{ "category": "ratifying", "label": "Parte que ha ratificado el Protocolo de la Ronda de São Paulo del SGPC" }, { "category": "signatory", "label": "Otro signatario del Protocolo de la Ronda de São Paulo del SGPC" }, { "category": "participant", "label": "Otro participante en el SGPC" }],
+  "tc_legend": [{ "category": "ratifying", "label": "Participante que ha ratificado el Protocolo de la Ronda de São Paulo del SGPC" }, { "category": "signatory", "label": "Otro signatario del Protocolo de la Ronda de São Paulo del SGPC" }, { "category": "participant", "label": "Otro participante en el SGPC" }],
   "tc_data": [
     { "name": "Benin", "code": "bj", "value": 52.95, "category": "participant" },
     { "name": "Irán (República Islámica del)", "code": "ir", "value": 46.0, "category": "participant" },

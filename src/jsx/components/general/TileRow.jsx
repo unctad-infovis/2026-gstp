@@ -1,9 +1,11 @@
-import RollingNumber from '@unctad-infovis/general-tools/components/RollingNumber.jsx';
 import useIsVisible from '@unctad-infovis/general-tools/helpers/UseIsVisible.js';
+import { getLocale } from '../../i18n.js';
+import RollingNumberLocalized from './RollingNumberLocalized.jsx';
 import './TileRow.css';
 
 export default function TileRow({ eyebrow, groups = [] }) {
   const [groupsRef, groupsInView] = useIsVisible(0.3);
+  const locale = getLocale();
 
   return (
     <div className="tr_container">
@@ -24,7 +26,7 @@ export default function TileRow({ eyebrow, groups = [] }) {
                     <p className="tr_tile_label">{tile.label}</p>
                     <p className="tr_tile_value">
                       {tile.prefix}
-                      <RollingNumber target={tile.value} decimals={tile.decimals ?? 0} inView={groupsInView} />
+                      <RollingNumberLocalized target={tile.value} decimals={tile.decimals ?? 0} inView={groupsInView} locale={locale} />
                       {tile.suffix}
                     </p>
                     {tile.unit && <p className="tr_tile_unit">{tile.unit}</p>}

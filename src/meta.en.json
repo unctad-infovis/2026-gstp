@@ -58,8 +58,8 @@
 
   "mb_eyebrow": "Membership",
   "mb_title": "Participating countries",
-  "mb_mercosur_prefix": "MERCOSUR:",
-  "mb_mercosur_members": "Argentina, Bolivia, Brazil, Paraguay and Uruguay",
+  "mb_mercosur_prefix": "MERCOSUR: for GSTP purposes:",
+  "mb_mercosur_members": "Argentina, Brazil, Paraguay and Uruguay",
   "mb_chip_label": "+ MERCOSUR",
 
   "tc_title": "Intra-GSTP trade accounts for almost one quarter of the participating countries' exports",

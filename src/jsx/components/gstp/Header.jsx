@@ -1,12 +1,14 @@
 import ButtonShare from '@unctad-infovis/general-tools/components/ButtonShare.jsx';
-import RollingNumber from '@unctad-infovis/general-tools/components/RollingNumber.jsx';
 import basePath from '@unctad-infovis/general-tools/helpers/BasePath.js';
 import useIsVisible from '@unctad-infovis/general-tools/helpers/UseIsVisible.js';
+import RollingNumberLocalized from '../general/RollingNumberLocalized.jsx';
+import { getLocale } from '../../i18n.js';
 import Nav from './Nav.jsx';
 import './Header.css';
 
 export default function Header({ hero_image, nav, stats, subtitle, title, title_highlight }) {
   const [statsRef, statsInView] = useIsVisible(0.3);
+  const locale = getLocale();
 
   function renderTitle() {
     // title_highlight must remain a literal substring of title in every meta.<lang>.json — translations need to preserve this.
@@ -43,7 +45,7 @@ export default function Header({ hero_image, nav, stats, subtitle, title, title_
                 <div className="header_stat" key={s.label}>
                   <div className="header_stat_value">
                     {s.prefix}
-                    <RollingNumber target={s.value} decimals={s.decimals ?? 0} inView={statsInView} />
+                    <RollingNumberLocalized target={s.value} decimals={s.decimals ?? 0} inView={statsInView} locale={locale} />
                     {s.suffix && (s.suffix.includes('%') ? s.suffix : <span className="header_stat_suffix">{s.suffix}</span>)}
                   </div>
                   <span className="header_stat_label">{s.label}</span>

@@ -8,7 +8,7 @@
 
   "stats": [
     { "prefix": "", "value": 4, "decimals": 0, "suffix": " milliards+", "label": "Personnes" },
-    { "prefix": "$", "value": 18, "decimals": 0, "suffix": " billions", "label": "Taille du marché" },
+    { "prefix": "$", "value": 18000, "decimals": 0, "suffix": " milliards", "label": "Taille du marché" },
     { "prefix": "", "value": 18, "decimals": 0, "suffix": " %", "label": "Des importations mondiales de marchandises" },
     { "text_lines": ["Élargir l'accès aux marchés,", "diversifier les échanges, renforcer"], "highlight": "la résilience" }
   ],
@@ -18,12 +18,12 @@
   "ni_eyebrow_concepts": "Concepts et contexte",
   "ni_eyebrow_bigpicture": "Vue d'ensemble",
   "ni_link1_text": "Accord du SGPC (1988)",
-  "ni_link1_href": "https://unctad.org/system/files/official-document/ditcmisc57_en.pdf",
+  "ni_link1_href": "https://unctad.org/system/files/official-document/ditcmisc57_fr.pdf",
   "ni_link2_text": "Protocole du Cycle de São Paulo du SGPC (2010)",
-  "ni_link2_href": "https://unctad.org/system/files/official-document/gstp-sprncfozd3_en.pdf",
+  "ni_link2_href": "https://unctad.org/system/files/official-document/sprncfoz3_fr_0.PDF",
 
   "ni_title": "Pourquoi est-ce important ?",
-  "ni_description": "Alors que le commerce mondial devient de plus en plus fragmenté et protectionniste, le SGPC offre aux pays en développement un canal préférentiel pour diversifier leurs marchés d'exportation et renforcer leur résilience économique. Les économies du SGPC représentent un marché combiné de 18 000 milliards de dollars, soit 18 % des importations mondiales de marchandises.",
+  "ni_description": "Alors que le commerce mondial devient de plus en plus fragmenté et protectionniste, le SGPC offre aux pays en développement un canal préférentiel pour diversifier leurs marchés d'exportation et renforcer leur résilience économique. Les économies du SGPC représentent un marché combiné de 18 000 milliards de dollars, soit 18 % des importations mondiales de marchandises.",
   "ni_description2": "L'Accord approche également d'une étape majeure : le Cycle de São Paulo, qui prévoit des réductions tarifaires plus importantes sur des milliers de produits, n'est plus qu'à une ratification de son entrée en vigueur — une étape qui pourrait débloquer jusqu'à 14 milliards de dollars de gains de bien-être pour les économies participantes.",
 
   "ni_def_title": "Qu'est-ce que le SGPC ?",
@@ -58,8 +58,8 @@
 
   "mb_eyebrow": "Adhésion",
   "mb_title": "Pays participants",
-  "mb_mercosur_prefix": "MERCOSUR :",
-  "mb_mercosur_members": "Argentine, Bolivie, Brésil, Paraguay et Uruguay",
+  "mb_mercosur_prefix": "MERCOSUR : aux fins du SGPC :",
+  "mb_mercosur_members": "Argentine, Brésil, Paraguay et Uruguay",
   "mb_chip_label": "+ MERCOSUR",
 
   "tc_title": "Le commerce intra-SGPC représente près d'un quart des exportations des pays participants",
