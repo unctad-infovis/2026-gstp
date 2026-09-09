@@ -10,10 +10,36 @@ Content is authored in MDX and rendered as a standalone React application embedd
 
 ## Embedding
 
+The site supports English, Spanish and French (see `src/jsx/i18n.js`). Language is auto-detected from a `/es/` or `/fr/` segment in the page URL, but since that isn't guaranteed on every unctad.org page, the embed code for translated pages should set it explicitly via a `lang` attribute on the root `div` — this takes priority over URL detection.
+
+**English** (default, no `lang` attribute needed):
+
 ```html
 <script type="module" crossorigin="" src="https://storage.unctad.org/2026-gstp/js/2026-gstp.min.js?v=1"></script>
 <link rel="stylesheet" crossorigin="" href="https://storage.unctad.org/2026-gstp/css/2026-gstp.min.css?v=1">
 <div class="app-root-2026-gstp" id="app-root-2026-gstp">
+  Loading...
+</div>
+<noscript>Your browser does not support Javascript!</noscript>
+```
+
+**Spanish**:
+
+```html
+<script type="module" crossorigin="" src="https://storage.unctad.org/2026-gstp/js/2026-gstp.min.js?v=1"></script>
+<link rel="stylesheet" crossorigin="" href="https://storage.unctad.org/2026-gstp/css/2026-gstp.min.css?v=1">
+<div class="app-root-2026-gstp" id="app-root-2026-gstp" lang="es">
+  Loading...
+</div>
+<noscript>Your browser does not support Javascript!</noscript>
+```
+
+**French**:
+
+```html
+<script type="module" crossorigin="" src="https://storage.unctad.org/2026-gstp/js/2026-gstp.min.js?v=1"></script>
+<link rel="stylesheet" crossorigin="" href="https://storage.unctad.org/2026-gstp/css/2026-gstp.min.css?v=1">
+<div class="app-root-2026-gstp" id="app-root-2026-gstp" lang="fr">
   Loading...
 </div>
 <noscript>Your browser does not support Javascript!</noscript>
